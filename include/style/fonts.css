@@ -1,7 +1,7 @@
 /* ----- KRYLON ----- */
 @font-face {
     font-family: 'Krylon';
-    src: url('../fonts/krylon.otf') format('opentype');
+    src: url('/include/fonts/krylon.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }  
@@ -9,7 +9,7 @@
 /* ----- MONTSERRAT: Bold ----- */
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('montserrat-bold.TTF') format('truetype');
+    src: url('/include/fonts/montserrat-bold.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 /* ----- MONTSERRAT: Italic ----- */
 @font-face {
     font-family: 'Montserrat-Italic';
-    src: url('montserrat-italic.TTF') format('truetype');
+    src: url('/include/fonts/montserrat-italic.TTF') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -25,7 +25,7 @@
 /* ----- MONTSERRAT: Light ----- */
 @font-face {
     font-family: 'Montserrat-Light';
-    src: url('montserrat-light.TTF') format('truetype');
+    src: url('/include/fonts/montserrat-light.TTF') format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
@@ -33,7 +33,7 @@
 /* ----- MONTSERRAT: Regular ----- */
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url('montserrat-regular.TTF') format('truetype');
+    src: url('/include/fonts/montserrat-regular.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +41,7 @@
 /* ----- MONTSERRAT: Thin ----- */
 @font-face {
     font-family: 'Montserrat-Thin';
-    src: url('montserrat-thin.TTF') format('truetype');
+    src: url('/include/fonts/montserrat-thin.TTF') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
