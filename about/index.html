@@ -16,157 +16,191 @@
 </head>
 <body>
 
-    <div class="custom-cursor">
-        <link rel="stylesheet" href="../include/style/cursor.css">
-        <script src="../include/scripts/cursor.js"></script>
+    <div class="loading">
+        <link rel="stylesheet" href="../include/style/loader.css">
+        <div class="loader-container">
+            <img src="../include/img/logo.png">
+            <svg viewBox="25 25 50 50">
+                <circle r="20" cy="50" cx="50"></circle>
+            </svg>
+        </div>
+        <script>
+            setTimeout(function() {
+                document.querySelector('.loading img').style.opacity = '1';
+                document.querySelector('.loading svg').style.opacity = '1';
+            }, 0);
+            setTimeout(function() {
+                var loading = document.querySelector('.loading');
+                var content = document.querySelector('content')
+                loading.style.opacity = '0';
+                setTimeout(function() {
+                    loading.style.display = 'none';
+                    content.style.display = 'block';
+                    
+                    setTimeout(function() {
+                        content.style.opacity = '1';
+                    }, 250);
+                    
+                }, 500);
+            }, 4000);
+        </script>
     </div>
 
-    <nav id="index-nav-fixed">
-        
-        <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
+    <content>
 
-        <div class="in-links">
+        <div class="custom-cursor">
+            <link rel="stylesheet" href="../include/style/cursor.css">
+            <script src="../include/scripts/cursor.js"></script>
+        </div>
+
+        <nav id="index-nav-fixed">
             
-            <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-            <a href="#about">Sobre Nosotros</a>
-            <a href="#documents">Documentos</a>
+            <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
 
-            <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
+            <div class="in-links">
+                
+                <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#documents">Documentos</a>
+
+                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a id="in-icons" href="mailto:nyericlan@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
+
+            </div>
+
+        </nav>
+
+        <header id="index-header">
+
+            <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
+            
+            <h1>
+                <span>Clan</span>
+                <i class="asset-01"></i>
+                <span>Nyeri</span>
+            </h1>
+
+            <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
+        </header>
 
-            <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
+        <nav id="index-nav"><div></div>
 
-        </div>
-
-    </nav>
-
-    <header id="index-header">
-
-        <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
-        
-        <h1>
-            <span>Clan</span>
-            <i class="asset-01"></i>
-            <span>Nyeri</span>
-        </h1>
-
-        <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-
-    </header>
-
-    <nav id="index-nav"><div></div>
-
-        <div class="in-links">
-            
-            <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-            <a href="#about">Sobre Nosotros</a>
-            <a href="#documents">Documentos</a>
-
-            <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-
-            <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-
-        </div>
-
-    <div></div></nav>
-
-    <main>
-        <section id="about">
-            <link rel="stylesheet" href="../include/style/sections/about.css">
-
-            <style>
-                #title-about-page {margin-top: 3em;}
-            </style>
-
-            <h1 id="title-about-page" class="title">Sobre el Clan</h1>
-
-            <div class="about-content">
+            <div class="in-links">
                 
-                <img src="../include/img/asset-05.jpg">     
-                
-                <div class="ac-left">
+                <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#documents">Documentos</a>
+
+                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a id="in-icons" href="mailto:nyericlan@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
+
+            </div>
+
+        <div></div></nav>
+
+        <main>
+            <section id="about">
+                <link rel="stylesheet" href="../include/style/sections/about.css">
+
+                <style>
+                    #title-about-page {margin-top: 3em;}
+                </style>
+
+                <h1 id="title-about-page" class="title">Sobre el Clan</h1>
+
+                <div class="about-content">
                     
-                    <p><span>E</span>l Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz. <br><br>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano. <br><br>¿Quieres saber cómo continúa la historia?</p>
+                    <img src="../include/img/asset-05.jpg">     
                     
-                    <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+                    <div class="ac-left">
+                        
+                        <p><span>E</span>l Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz. <br><br>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano. <br><br>¿Quieres saber cómo continúa la historia?</p>
+                        
+                        <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="documents">
+                <link rel="stylesheet" href="../include/style/pages/about.css">
+
+                <h1 class="title">Documentos Oficiales</h1>
+
+                <div class="documents-content">
+
+                    <a class="dc-card" href="./carta-constitución.pdf">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <span>Carta de Constitución (776KB)</span>
+                    </a>
+
+                    <a class="dc-card" href="./constitución-clan.pdf">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <span>Constitución de Clan (834KB)</span>
+                    </a>
+
+                    <a class="dc-card" href="./plantilla-clan.dotx">
+                        <i class="fa-regular fa-file-word"></i>
+                        <span>Plantilla Clan (253KB)</span>
+                    </a>
+
+                    <a class="dc-card" href="./identidad-corporativa.pdf">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <span>Identidad (2.081KB)</span>
+                    </a>
 
                 </div>
 
-            </div>
-        </section>
+            </section>
 
-        <section id="documents">
-            <link rel="stylesheet" href="../include/style/pages/about.css">
-
-            <h1 class="title">Documentos Oficiales</h1>
-
-            <div class="documents-content">
-
-                <a class="dc-card" href="./carta-constitución.pdf">
-                    <i class="fa-regular fa-file-pdf"></i>
-                    <span>Carta de Constitución (776KB)</span>
-                </a>
-
-                <a class="dc-card" href="./constitución-clan.pdf">
-                    <i class="fa-regular fa-file-pdf"></i>
-                    <span>Constitución de Clan (834KB)</span>
-                </a>
-
-                <a class="dc-card" href="./plantilla-clan.dotx">
-                    <i class="fa-regular fa-file-word"></i>
-                    <span>Plantilla Clan (253KB)</span>
-                </a>
-
-                <a class="dc-card" href="./identidad-corporativa.pdf">
-                    <i class="fa-regular fa-file-pdf"></i>
-                    <span>Identidad (2.081KB)</span>
-                </a>
-
+            <div class="gb-container">
+                <a href="../" id="go-back-btn"><i class="fa-solid fa-arrow-left"></i> Volver</a>
             </div>
 
-        </section>
+        </main>
 
-        <div class="gb-container">
-            <a href="../" id="go-back-btn"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-        </div>
+        <footer>
+            <link rel="stylesheet" href="../include/style/footer.css">
 
-    </main>
-
-    <footer>
-        <link rel="stylesheet" href="../include/style/footer.css">
-
-        <img src="../include/img/logo-1.png">
-  
-        <div class="footer-info">
-
-            <div class="footer-center">
-                <a href="../#home">Inicio</a>
-                <a href="#">El Clan</a>
-                <a href="../photogallery/">Fotogalería</a>
-                <a href="../photogallery/">Proyecto: DPS24</a>
-            </div>
+            <img src="../include/img/logo-1.png">
     
-            <div class="footer-right">
-                <p>Correo: <a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
-                <p>Dirección: C. Haza de Acosta, 61, 04009 Almería</p>
-            </div>
+            <div class="footer-info">
 
-        </div>
-      
-    </footer>
+                <div class="footer-center">
+                    <a href="../#home">Inicio</a>
+                    <a href="#">El Clan</a>
+                    <a href="../photogallery/">Fotogalería</a>
+                    <a href="../photogallery/">Proyecto: DPS24</a>
+                </div>
+        
+                <div class="footer-right">
+                    <p>Correo: <a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
+                    <p>Dirección: C. Haza de Acosta, 61, 04009 Almería</p>
+                </div>
+
+            </div>
+        
+        </footer>
+        
+    </content>
     
 </body>
 </html>

@@ -17,307 +17,341 @@
 </head>
 <body>
 
-    <div class="custom-cursor">
-        <link rel="stylesheet" href="../include/style/cursor.css">
-        <script src="../include/scripts/cursor.js"></script>
+    <div class="loading">
+        <link rel="stylesheet" href="../include/style/loader.css">
+        <div class="loader-container">
+            <img src="../include/img/logo.png">
+            <svg viewBox="25 25 50 50">
+                <circle r="20" cy="50" cx="50"></circle>
+            </svg>
+        </div>
+        <script>
+            setTimeout(function() {
+                document.querySelector('.loading img').style.opacity = '1';
+                document.querySelector('.loading svg').style.opacity = '1';
+            }, 0);
+            setTimeout(function() {
+                var loading = document.querySelector('.loading');
+                var content = document.querySelector('content')
+                loading.style.opacity = '0';
+                setTimeout(function() {
+                    loading.style.display = 'none';
+                    content.style.display = 'block';
+                    
+                    setTimeout(function() {
+                        content.style.opacity = '1';
+                    }, 250);
+                    
+                }, 500);
+            }, 4000);
+        </script>
     </div>
 
+    <content>
 
-    <nav id="index-nav-fixed">
-        
-        <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
-
-        <div class="in-links">
-            
-            <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-            <a href="#index">Inicio</a>
-            <a href="#photogallery">Fotogalería</a>
-
-            <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-
-            <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-
+        <div class="custom-cursor">
+            <link rel="stylesheet" href="../include/style/cursor.css">
+            <script src="../include/scripts/cursor.js"></script>
         </div>
 
-    </nav>
 
-    <header id="index-header">
-
-        <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
-        
-        <h1>
-            <span>Clan</span>
-            <i class="asset-01"></i>
-            <span>Nyeri</span>
-        </h1>
-
-        <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-
-    </header>
-
-    <nav id="index-nav"><div></div>
-
-        <div class="in-links">
+        <nav id="index-nav-fixed">
             
-            <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-            <a href="#index">Inicio</a>
-            <a href="#photogallery">Fotogalería</a>
+            <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
 
-            <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-
-            <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-
-        </div>
-
-    <div></div></nav>
-
-    <main>
-        <section id="index" style="height: unset;height: 0;"></section>
-        <section id="photogallery">
-            <link rel="stylesheet" href="../include/style/sections/photogallery.css">
-
-            <h1 class="title">Fotogalería</h1>
-
-            <div class="photogallery-content">
-
-                <div class="pc-separator">
-                    <span>Día del Pensamiento Scout 2024</span>
-                </div>
-
-                <div class="gb-container" style="padding: .5em;">
-                    <a href="../dps/#photogallery" id="go-back-btn"><i class="fa-solid fa-plus"></i> Ver más</a>
-                </div>
-
-                <div class="pc-container">
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-01.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-03.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-04.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-06.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-07.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-05.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/dps-02.jpg"/>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="pc-separator">
-                    <span>Hermanamiento: Clan Nyeri X Al-Mutasim</span>
-                </div>
-
-                <div class="pc-container">
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/hermanamiento-almutasim-01.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2024/hermanamiento-almutasim-02.jpg"/>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="pc-separator">
-                    <span>X Encuentro Ruta Andaluz: Green Boquerón 2023</span>
-                </div>
-
-                <div class="pc-container">
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-green-02.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-green-01.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-green-03.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-green-04.jpg"/>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="in-links">
                 
-                <div class="pc-separator">
-                    <span>XXV Aniverdario ADE Almería & Voluntariado Fesbal</span>
-                </div>
+                <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+                <a href="#index">Inicio</a>
+                <a href="#photogallery">Fotogalería</a>
 
-                <div class="pc-container">
+                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/fesbal-1.jpg"/>
+                <a id="in-icons" href="mailto:nyericlan@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
+
+            </div>
+
+        </nav>
+
+        <header id="index-header">
+
+            <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
+            
+            <h1>
+                <span>Clan</span>
+                <i class="asset-01"></i>
+                <span>Nyeri</span>
+            </h1>
+
+            <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </header>
+
+        <nav id="index-nav"><div></div>
+
+            <div class="in-links">
+                
+                <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+                <a href="#index">Inicio</a>
+                <a href="#photogallery">Fotogalería</a>
+
+                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a id="in-icons" href="mailto:nyericlan@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
+
+            </div>
+
+        <div></div></nav>
+
+        <main>
+            <section id="index" style="height: unset;height: 0;"></section>
+            <section id="photogallery">
+                <link rel="stylesheet" href="../include/style/sections/photogallery.css">
+
+                <h1 class="title">Fotogalería</h1>
+
+                <div class="photogallery-content">
+
+                    <div class="pc-separator">
+                        <span>Día del Pensamiento Scout 2024</span>
+                    </div>
+
+                    <div class="gb-container" style="padding: .5em;">
+                        <a href="../dps/#photogallery" id="go-back-btn"><i class="fa-solid fa-plus"></i> Ver más</a>
+                    </div>
+
+                    <div class="pc-container">
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-01.jpg"/>
+                            </div>
                         </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-03.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-04.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-06.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-07.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-05.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/dps-02.jpg"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pc-separator">
+                        <span>Hermanamiento: Clan Nyeri X Al-Mutasim</span>
+                    </div>
+
+                    <div class="pc-container">
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/hermanamiento-almutasim-01.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2024/hermanamiento-almutasim-02.jpg"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pc-separator">
+                        <span>X Encuentro Ruta Andaluz: Green Boquerón 2023</span>
+                    </div>
+
+                    <div class="pc-container">
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-green-02.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-green-01.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-green-03.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-green-04.jpg"/>
+                            </div>
+                        </div>
+
                     </div>
                     
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/xxv-ade-1.jpg"/>
+                    <div class="pc-separator">
+                        <span>XXV Aniverdario ADE Almería & Voluntariado Fesbal</span>
+                    </div>
+
+                    <div class="pc-container">
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/fesbal-1.jpg"/>
+                            </div>
                         </div>
+                        
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/xxv-ade-1.jpg"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pc-separator">
+                        <span>Campamento: Incio Ronda Solar 23-24</span>
+                    </div>
+
+                    <div class="pc-container">
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-06.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-04.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-05.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-03.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-01.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-02.jpg"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pc-separator">
+                        <span>Misa: Incio Ronda Solar 23-24</span>
+                    </div>
+                    
+                    <div class="pc-container">
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/misa-irs-01.jpg"/>
+                            </div>
+                        </div>
+
+                        <div class="pc-card">
+                            <div class="pc-img-container">
+                                <img class="pc-img" src="../include/img/photogallery/2023/misa-irs-02.jpg"/>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div class="pc-separator">
-                    <span>Campamento: Incio Ronda Solar 23-24</span>
+                <div class="gb-container">
+                    <a href="../" id="go-back-btn"><i class="fa-solid fa-arrow-left"></i> Volver</a>
                 </div>
 
-                <div class="pc-container">
+            </section>
+        </main>
 
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-06.jpg"/>
-                        </div>
-                    </div>
+        <footer>
+            <link rel="stylesheet" href="../include/style/footer.css">
 
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-04.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-05.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-03.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-01.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/campa-irs-02.jpg"/>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="pc-separator">
-                    <span>Misa: Incio Ronda Solar 23-24</span>
-                </div>
-                
-                <div class="pc-container">
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/misa-irs-01.jpg"/>
-                        </div>
-                    </div>
-
-                    <div class="pc-card">
-                        <div class="pc-img-container">
-                            <img class="pc-img" src="../include/img/photogallery/2023/misa-irs-02.jpg"/>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="gb-container">
-                <a href="../" id="go-back-btn"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-            </div>
-
-        </section>
-    </main>
-
-    <footer>
-        <link rel="stylesheet" href="../include/style/footer.css">
-
-        <img src="../include/img/logo-1.png">
-  
-        <div class="footer-info">
-
-            <div class="footer-center">
-                <a href="../#home">Inicio</a>
-                <a href="../about/">El Clan</a>
-                <a href="#">Fotogalería</a>
-                <a href="../dps/">Proyecto: DPS24</a>
-            </div>
+            <img src="../include/img/logo-1.png">
     
-            <div class="footer-right">
-                <p>Correo: <a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
-                <p>Dirección: C. Haza de Acosta, 61, 04009 Almería</p>
+            <div class="footer-info">
+
+                <div class="footer-center">
+                    <a href="../#home">Inicio</a>
+                    <a href="../about/">El Clan</a>
+                    <a href="#">Fotogalería</a>
+                    <a href="../dps/">Proyecto: DPS24</a>
+                </div>
+        
+                <div class="footer-right">
+                    <p>Correo: <a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
+                    <p>Dirección: C. Haza de Acosta, 61, 04009 Almería</p>
+                </div>
+
             </div>
+        
+        </footer>
 
-        </div>
-      
-    </footer>
-
-    <script src="../include/lib/jquery-3.7.1.min.js"></script>
-    <script type="module" src="../include/scripts/photogallery.js"></script>
+        <script src="../include/lib/jquery-3.7.1.min.js"></script>
+        <script type="module" src="../include/scripts/photogallery.js"></script>
+    
+    </content>
     
 </body>
 </html>
