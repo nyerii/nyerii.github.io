@@ -1,0 +1,26 @@
+#documents {text-align: center;width: 100%;height: unset;height: 100%;}
+#documents .title {margin: 3em;}
+.documents-content {display: flex;flex-wrap: wrap;justify-content: center;}
+.dc-card {
+    color: var(--color-light);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    font-family: 'Montserrat';}
+.dc-card:hover {color: var(--color-primary);}
+.dc-card i {
+    font-size: 3rem;
+    margin-bottom: .3em;}
+#go-back-btn {
+    font-family: 'Montserrat';
+    position: relative;
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;}
+#go-back-btn:hover {box-shadow: var(--default-box-shadow);}
+.gb-container {text-align: center;margin: 1em;margin-bottom: 1em;padding-bottom: 1em;}

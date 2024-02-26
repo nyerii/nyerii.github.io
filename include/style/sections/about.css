@@ -1,0 +1,79 @@
+#about {
+    width: 100%;
+    height: unset;
+    height: 100%;}
+.about-content {
+    margin: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: space-around;}
+.about-content img {
+    border-radius: 10px;
+    width: 50%;}
+.about-content p {
+    font-family: 'Montserrat';
+    color: var(--color-light);
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+text-align: justify;}
+.about-content p span {
+    font-family: 'Krylon', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    font-size: 3.5rem;
+    margin-right: 10px;}
+@media screen and (max-width: 729px) {
+    .about-content {flex-direction: column-reverse;}
+    .about-content img {width: 100%;}}
+.ac-left {display: inline;width: 100%;}
+.ac-left a {
+    font-family: 'Montserrat';
+    position: relative;
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;}
+.ac-left a:hover {box-shadow: var(--default-box-shadow);}
+.about-content img {
+    max-width: 100%;
+    filter: brightness(70%);
+    transition: all 1s ease;}
+.about-content img:hover {filter: brightness(100%);}
+#about {text-align: center;}
+.about-content {text-align: left;}
+.ac-left .title {text-align: right;}
+
+
+/* ----- SLIDER ----- */
+#belong {
+    background: var(--bg-light);
+    width: 100%;
+    height: unset;
+    padding: 2em;}
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(calc(-250px * 8));}}
+#belong .belong-content {
+    align-items: center;
+    justify-content: center;}
+#belong .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    width: auto;
+    position: relative;}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 16);}
+.slider .slide {
+    height: 100px;
+    width: 250px;}
+@media screen and (max-width: 669px) {
+    .belong-content {transform: scale(.8);}
+    #belong {padding-left: .5em;padding-right: .5em;}
+}

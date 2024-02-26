@@ -1,0 +1,127 @@
+/* ---------- HEADER ---------- */
+
+#index-header {
+    position: relative;
+    z-index: 11111;
+    text-align: center;
+    background: var(--bg-light);
+    padding: 2em;}
+#index-header h1 {
+    display: inline;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;}
+#index-header h1 .asset-01 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/asset-01.png');
+    background-size: cover;}
+#index-header h1 span {margin: 0;}
+#index-header h1 span:first-child {
+    margin-right: .3em;}
+#index-header h1 span:last-child {
+    margin-left: .3em;}
+#index-header img {
+    height: 75px;
+    width: auto;}
+#index-header a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    transition: var(--default-animation);}
+#index-header a:hover {
+    color: var(--color-primary);
+    transform: scale(1.2);}
+
+/* ---------- NAV MAIN ---------- */  
+
+#index-nav-fixed, #index-nav {
+    padding: .3em;
+    padding-left: 2em;
+    padding-right: 2em;}
+#index-nav-fixed {
+    position: fixed;
+    z-index: 1111;}
+#index-nav {
+    padding: 1em;}
+#index-nav-fixed a, #index-nav a {
+    text-decoration: none;
+    color: var(--color-dark);
+    padding-left: .3em;
+    padding-right: .3em;
+    border: 0px solid var(--color-primary);
+    transition: var(--default-animation);}
+#index-nav-fixed a:hover, #index-nav a:hover {
+    padding-bottom: .3em;
+    border-bottom: 1px solid var(--color-primary);}
+#index-nav-fixed img, #index-nav img {
+    height: 45px;}
+#in-icons:hover {
+    padding-bottom: unset;
+    border-bottom: unset;
+    all: unset;}
+#index-nav-fixed #in-icons, #index-nav #in-icons,
+#index-nav-fixed #dps24-btn, #index-nav #dps24-btn {
+    border: none;
+    padding-left: .3em;
+    padding-right: .3em;
+    transition: var(--default-animation);}
+#index-nav-fixed #dps24-btn, #index-nav #dps24-btn {
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: .5em 1em;
+    border-radius: 5px;
+    margin-left: .5em;}
+#index-nav-fixed #in-icons:hover, #index-nav #in-icons:hover,
+#index-nav-fixed #dps24-btn:hover, #index-nav #dps24-btn:hover {
+    cursor: pointer;}
+#index-nav-fixed #dps24-btn:hover, #index-nav #dps24-btn:hover {
+    transform: translate(-3px, 0px);
+    box-shadow: var(--default-box-shadow);}
+#index-nav-fixed #in-icons:hover, #index-nav #in-icons:hover {
+    color: var(--color-primary);}
+#index-nav, #index-nav-fixed{
+    background: var(--bg-light-op-7);}
+#index-nav-fixed {width: 100%;box-shadow: var(--default-box-shadow);}
+#dps24-a {display: none;}
+
+/* COMMON (headerd & nav) */
+
+#index-nav-fixed, #index-header, #index-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 831px) {
+    /* #index-nav-fixed #dps24-btn {margin-top: 1em;padding: .3em;} */
+    #index-nav-fixed #dps24-btn {display: none;}
+    #dps24-a {display: inline;}}
+@media screen and (max-width: 721px) {#index-nav #dps24-btn {display: none;}}
+@media screen and (max-width: 647px) {
+    #index-nav-fixed {text-align: center;} #index-nav-fixed a {margin-top: .5em;}
+    #index-nav {text-align: center;} #index-nav a {margin-top: .5em;}
+    #index-nav-fixed #in-icons {display: none;}
+    #index-nav #dps24-btn {display: inline-block;}}
+@media screen and (max-width: 545px) {#index-header a {display: none;}}
+@media screen and (max-width: 515px) {
+    #index-header h1 span:first-child {margin-right: 0;}
+    #index-header h1 span:last-child {margin-left: 0;}
+    #index-header h1 {letter-spacing: 5px;}}
+@media screen and (max-width: 500px) {
+    #index-nav #in-icons {display: none;}
+    .asset-01 {width: 0;height: 0;}}
+@media screen and (max-width: 446px) {
+    #index-nav {text-align: center;} #index-nav a {margin-top: .5em;}
+    #index-header {
+        display: block;
+        justify-content: unset;
+        padding: 1em;}
+    #index-header h1 {
+        margin-top: .5em;
+        display: block;}
+    }

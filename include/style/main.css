@@ -1,0 +1,60 @@
+:root {
+    --bg-light: #e3e3e3;
+    --bg-dark: #1c1c1c;
+
+    --bg-light-op-9: rgba(227, 227, 227, .9);
+    --bg-light-op-8: rgba(227, 227, 227, .8);
+    --bg-light-op-7: rgba(227, 227, 227, .7);
+    --bg-light-op-6: rgba(227, 227, 227, .6);
+    --bg-light-op-5: rgba(227, 227, 227, .5);
+    --bg-light-op-4: rgba(227, 227, 227, .4);
+    --bg-light-op-3: rgba(227, 227, 227, .3);
+    --bg-light-op-2: rgba(227, 227, 227, .2);
+    --bg-light-op-1: rgba(227, 227, 227, .1);
+
+    --color-dark: var(--bg-dark);
+    --color-light: var(--bg-light);
+    --color-primary: #bb2020;
+
+    --default-animation: all ease-in-out .3s;
+    --default-box-shadow: 0 20px 80px -10px var(--color-primary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Krylon', sans-serif;
+    background-color: var(--bg-dark);
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+:root::-webkit-scrollbar {width: 10px;}
+:root::-webkit-scrollbar-track {
+    background: var(--bg-dark);}
+:root::-webkit-scrollbar-thumb {
+    background: var(--bg-light-op-5);
+    transition: all ease-in-out .3s;
+    cursor: pointer;}
+:root::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+.title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: var(--color-light);
+    text-transform: uppercase;
+    letter-spacing: 10px;}
