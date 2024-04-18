@@ -1,0 +1,89 @@
+
+#about {
+    padding: 1em;
+    padding-top: 5em;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#about h1 {
+    font-family: "EB Garamond", serif;
+    color: var(--light);
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.ac-left {
+    height: fill;
+    width: 20em;
+    background: url('../../../assets/images/img-01.jpg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.ac-right {
+    margin-left: 2em;
+}
+
+.ac-right p {
+    max-width: 500px;
+    color: var(--light);
+}
+
+
+.acr-buttons {
+    margin-top: 1em;
+}
+
+#acrb-proyects {
+    margin-right: .5em;
+}
+
+#acrb-read-more, #acrb-proyects{
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    color: var(--light);
+    padding: .5em 1em;
+    border-radius: 5px;
+    transition: all ease-in .3s;
+}
+
+#acrb-proyects {
+    background: var(--primary);
+}
+
+#acrb-read-more {
+    background: none;
+}
+#acrb-proyects:hover {
+    box-shadow: 0 0px 80px -10px var(--primary);
+}
+
+#acrb-read-more:hover {background: var(--primary);}
+
+@media only screen and (max-width: 600px) {
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .ac-left {
+        margin-top: 1em;
+        height: 20em;
+        width: auto;
+        
+    }
+    .ac-right p {
+        max-width: unset;
+        text-align: left;
+    }
+
+    .ac-right {
+        margin-left: 0;
+    }
+}

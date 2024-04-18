@@ -3,344 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Clan Nyeri</title>
-    <link rel="icon" href="include/img/logo.png">
+    <link rel="icon" href="include/assets/logo.svg">
 
     <link rel="stylesheet" href="include/style/main.css">
-    <link rel="stylesheet" href="include/style/fonts.css">
-    <link rel="stylesheet" href="include/lib/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="include/style/navs/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="include/style/header-nav.css">
-    <link rel="stylesheet" href="include/style/index.css">
+    <link rel="stylesheet" href="include/style/content/index/home.css">
+    <link rel="stylesheet" href="include/style/content/index/about.css">
+    <link rel="stylesheet" href="include/style/content/index/proyects.css">
+    <link rel="stylesheet" href="include/style/content/index/index/shop.css">
+    <link rel="stylesheet" href="include/style/navs/footer.css">
+    <link rel="stylesheet" href="include/style/content/index/photogallery.css">
+
 </head>
 <body>
 
-    <div class="loading">
-        <link rel="stylesheet" href="include/style/loader.css">
-        <div class="loader-container">
-            <img src="include/img/logo.png">
-            <svg viewBox="25 25 50 50">
-                <circle r="20" cy="50" cx="50"></circle>
-            </svg>
-        </div>
-        <script>
-            setTimeout(function() {
-                document.querySelector('.loading img').style.opacity = '1';
-                document.querySelector('.loading svg').style.opacity = '1';
-            }, 0);
-            setTimeout(function() {
-                var loading = document.querySelector('.loading');
-                var content = document.querySelector('content')
-                loading.style.opacity = '0';
-                setTimeout(function() {
-                    loading.style.display = 'none';
-                    content.style.display = 'block';
-                    
-                    setTimeout(function() {
-                        content.style.opacity = '1';
-                    }, 250);
-                    
-                }, 500);
-            }, 4000);
-        </script>
-    </div>
-
-    <content>
-
-        <div class="custom-cursor">
-            <link rel="stylesheet" href="include/style/cursor.css">
-            <script src="include/scripts/cursor.js"></script>
-        </div>
-    
-        <nav id="index-nav-fixed">
-            
-            <img src="include/img/logo.png" alt="Clan Nyeri Logo">
-    
-            <div class="in-links">
-                
-                <a href="#home">Inicio</a>
-                <a href="#about">Sobre Nosotros</a>
-                <a href="#proyects">Proyectos</a>
-                <a href="#photogallery">Fotogalería</a>
-                <a href="dps/" id="dps24-a">DPS24</a>
-    
-                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-    
-                <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-    
-                <a href="dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-    
-            </div>
-    
+    <header>
+        <nav id="hn-left">
+            <a href="/">
+                <img src="include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
+            </a>
         </nav>
     
-        <header id="index-header">
+        <nav id="hn-right">
+            <ul id="hnr-horizontal">
+                <li id="hn-button-home"><a href="#home">Inicio</a></li>
+                <li id="hn-button-about"><a href="#about">El Clan</a></li>
+                <li id="hn-button-proyects">
+                    <a href="#proyects">Proyectos<span>Nuevo</span></a>
+                    <ul id="hnr-vertical">
+                        <li><a href="proyects/dps25/">Dia del Pensamiento Scout</a></li>
+                        <li><a href="proyects/tejiendo-historia/">Tejiendo Historia</a></li>
+                        <li><a href="proyects/">Voluntariado</a></li>
+                    </ul>
+                </li>
+                <li id="hn-button-photogallery"><a href="#photogallery">Fotogalería</a></li>
+                <!-- <li id="hn-button-shop"><a href="#">Tienda</a></li> -->
+                <li id="hn-button-instagram">
+                    <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="hn-toggle">
+            <button id="hn-toggle-button"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay">
+
+        <button id="no-close"><i class="fa-solid fa-xmark"></i></button>
     
-            <img src="include/img/logo.png" alt="Clan Nyeri Logo">
+        <ul id="nvo-content">
+            <li id="hn-button-home"><a href="#home">Inicio</a></li>
+            <li id="hn-button-about"><a href="#about">El Clan</a></li>
+            <li id="hn-button-proyects"><a href="#proyects">Proyectos<span>Nuevo</span></a></li>
+            <li id="hn-button-photogallery"><a href="#photogallery">Fotogalería</a></li>
+            <!-- <li id="hn-button-shop"><a href="#">Tienda</a></li> -->
+        </ul>
+    
+        <img src="include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
+    
+    </div>
+
+    <section id="home"></section>
+    
+    <section id="about">
+        <div class="about-content">
+            <div class="ac-left"></div>
+            <div class="ac-right">
+                <h1>Sobre Nosotros</h1>
+                <p>El Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz.<br><br>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano.<br><br>¿Quieres saber cómo continúa la historia?</p>
+                <div class="acr-buttons">
+                    <button id="acrb-proyects"><i class="fa-solid fa-hand-holding-hand"></i> Proyectos</button>
+                    <button id="acrb-read-more"><i class="fa-solid fa-book"></i> Leer Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="proyects">
+
+        <div class="proyect proyect-dps25">
+            <span><i>DPS25 Proyect - 22 de Febrero 2025</i></span>
+            <h2>Día del Pensamiento Scout 2025</h2>
+            <p>Después del fantástico evento realizado el pasado 24 de febrero de 2024, el Clan Nyeri ha decido volver ha organizar el Día del Pensamiento Scout. ¡Pronto tendremos más información!.</p>
+            <button id="pp-dps-25-btn"><i class="fa-solid fa-calendar-days"></i> <span>Guardar en el Calendario</span></button>
             
-            <h1>
-                <span>Clan</span>
-                <i class="asset-01"></i>
-                <span>Nyeri</span>
-            </h1>
-    
-            <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-    
-        </header>
-    
-        <nav id="index-nav"><div></div>
-    
-            <div class="in-links">
-                
-                <a href="#home">Inicio</a>
-                <a href="#about">Sobre Nosotros</a>
-                <a href="#proyects">Proyectos</a>
-                <a href="#photogallery">Fotogalería</a>
-    
-                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-    
-                <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-    
-                <a href="dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-    
+        </div>
+        
+        <div class="proyect proyect-tejiendo-historia">
+            <span><i>Extrajob - San Jorge Asociativo 2024</i></span>
+            <h2>Tejiendo Historia</h2>
+            <p>En el marco del XXV Aniversario de la ADE almeriense, desde el Clan Ruta Nyeri presentamos el "Proyecto TH25: Tejiendo Historia". Una iniciativa que busca conmemorar un cuarto de siglo de compromiso, trabajo y pasión por el escultismo en nuestra ciudad, Almería. En la celebración de este evento tan significativo, es esencial que cada detalle refleje la rica historia, el compromiso y la pasión que han caracterizado a nuestra asociación a lo largo de estos años.</p>
+            <button id="pp-tejiendo-historia-btn"><i class="fa-regular fa-circle-question"></i> <span>El Extrajob</span></button>
+        </div>
+
+        <div class="proyects-hr" id="proyects-hr">
+            <button id="phr-view-more"><i class="fa-solid fa-chevron-down"></i> Ver Más</button>
+        </div>
+
+        <div class="toggle-proyects" id="toggle-proyects">
+
+            <div class="proyect proyect-dps24">
+                <span><i>DPS24 Proyect - 24 de Febrero 2024</i></span>
+                <h2>Día del Pensamiento Scout 2024</h2>
+                <p>Este año 2024, desde el Clan Ruta Nyeri ha surgido la iniciativa de celebrar este extraordinario día en la provincia de Almería, marcando un hito al ser la primera vez que se lleve a cabo en nuestra querida ciudad. Junto con el eslogan “Música, Familia y Deporte”, el clan ruta Nyeri y la asocición Nuevo Futuro, realizarán un encuentro presencia donde se unirán todos los Grupos Scouts que se alojan en nuestra provincia, para celebrar en familia, y con la familia, este día tan importante para nosotros.</p>
+                <button id="pp-dps-24-btn"><i class="fa-regular fa-circle-question"></i> <span>¿Que pasó?</span></button>
             </div>
     
-        <div></div></nav>
-        
-        <main>
-    
-            <section id="home">
-                <link rel="stylesheet" href="include/style/sections/home.css">
-                
-                <!-- Scroll Down -->
-                <!-- <a class="scroll-downs" href="#about">
-                    <div class="mousey"><div class="scroller"></div></div>
-                </a> -->
-    
-            </section>
-    
-            <section id="about">
-                <link rel="stylesheet" href="include/style/sections/about.css">
-    
-                <div class="about-content">
-                    
-                    <img src="include/img/asset-04.jpg">     
-                    
-                    <div class="ac-left">
-                        
-                        <h1 class="title">Sobre el Clan</h1>
-                        
-                        <p><span>E</span>l Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz. <br><br>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano. <br><br>¿Quieres saber cómo continúa la historia?</p>
-                        
-                        <a href="about/"><i class="fa-solid fa-book-bookmark"></i> Leer Más</a>
-    
-                    </div>
-    
-                </div>
-            </section>
-    
-            <section id="proyects">
-                <link rel="stylesheet" href="include/style/sections/proyects.css">
-    
-                <div class="proyects-content">
-                    
-                </div>
-    
-                <div class="proyects-container">
-                    <div class="column-1">
-                        
-                        <div class="card card-1">
-                            <div class="card-content">
-                                <p>Bloqueado</p>
-                                <h1>Tejiendo Historia</h1>
-                                <span><p class="pcg-desc">En el marco del XXV Aniversario de la ADE almeriense, desde el Clan Ruta Nyeri presentamos el "Proyecto TH25: Tejiendo Historia". Una iniciativa que busca conmemorar un cuarto de siglo de compromiso, trabajo y pasión por el escultismo en nuestra ciudad, Almería. En la celebración de este evento tan significativo, es esencial que cada detalle refleje la rica historia, el compromiso y la pasión que han caracterizado a nuestra asociación a lo largo de estos años.</p></span>
-                                <a><i class="fa-solid fa-lock"></i></a>
-                            </div>
-                        </div>
-            
-                        <div class="card card-2">
-                            <div class="card-content">
-                                <p>Acción de Servicio</p>
-                                <h1>Voluntariado en Fesbal</h1>
-                                <span><p class="pcg-desc">Una de las palabras por la que se define la rama ruta es servir. Algunos de los objetivos que el clan Nyeri quiere realizar a lo largo de la etapa es la realización de voluntariado. La primera acción de servicio que realizó el clan, fué la colaboración en las jornadas de invierno de recogida de alimentos organizada por la Federación Española de Bancos de Almientos (FESBAL).</p></span>
-                                <a target="_blank" href="https://fesbal.org/">Conoce Fesbal</a>
-                            </div>
-                        </div>
-            
-                    </div>
-                    
-                    
-                    <div class="column-2">
-            
-                        <div class="card card-3">
-                            <div class="card-content">
-                                <p>DPS Proyect - 24 de Febrero 2024</p>
-                                <h1>Día del Pensamiento Scout 2024</h1>
-                                <span><p class="pcg-desc">Este año 2024, desde el Clan Ruta Nyeri ha surgido la iniciativa de celebrar este extraordinario día en la provincia de Almería, marcando un hito al ser la primera vez que se lleve a cabo en nuestra querida ciudad. Junto con el eslogan “Música, Familia y Deporte”, el clan ruta Nyeri y la asocición Nuevo Futuro, realizarán un encuentro presencia donde se unirán todos los Grupos Scouts que se alojan en nuestra provincia, para celebrar en familia, y con la familia, este día tan importante para nosotros.</p></span>
-                                <a href="dps/">Saber Más</a>
-                                <!-- <img src="include/img/asset-11.jpg"> -->
-                            </div>
-                        </div>
-            
-                    </div>
-                </div>
-    
-            </section>
-    
-            <section id="belong">
-                <div class="belong-content">
-                    <div class="slider">
-                        <div class="slide-track">
-            
-                            <div class="slide">
-                                <img src="include/img/sca-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/ade-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cabodevenus-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cn-logo.png">
-                            </div>
-                            
-                            <div class="slide">
-                                <img src="include/img/sca-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/ade-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cabodevenus-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cn-logo.png">
-                            </div>
-    
-                            <div class="slide">
-                                <img src="include/img/sca-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/ade-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cabodevenus-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cn-logo.png">
-                            </div>
-    
-                            <div class="slide">
-                                <img src="include/img/sca-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/ade-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cabodevenus-logo.png">
-                            </div>
-                            <div class="slide">
-                                <img src="include/img/cn-logo.png">
-                            </div>
-            
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="photogallery">
-                <link rel="stylesheet" href="include/style/sections/photogallery.css">
-    
-                <div class="photogallery-content">
-                    <h1 class="title">Fotogalería</h1>
-    
-                    <div class="pc-container">
-    
-                        <div class="pc-card">
-                            <div class="pc-img-container">
-                                <img class="pc-img" src="include/img/photogallery/2024/dps-01.jpg"/>
-                            </div>
-                        </div>
-    
-                        <div class="pc-card">
-                            <div class="pc-img-container">
-                                <img class="pc-img" src="include/img/photogallery/2024/hermanamiento-almutasim-01.jpg"/>
-                            </div>
-                        </div>
-    
-                        <div class="pc-card">
-                            <div class="pc-img-container">
-                                <img class="pc-img" src="include/img/asset-10.jpg"/>
-                            </div>
-                        </div>
-                        
-                        <div class="pc-card">
-                            <div class="pc-img-container">
-                                <img class="pc-img" src="include/img/asset-07.jpg"/>
-                            </div>
-                        </div>
-                        
-                        <div class="pc-card">
-                            <div class="pc-img-container">
-                                <img class="pc-img" src="include/img/asset-09.jpg"/>
-                            </div>
-                        </div>
-    
-                        <div class="pc-card">
-                            <div class="pc-img-container">
-                                <img class="pc-img" src="include/img/asset-08.jpg"/>
-                            </div>
-                        </div>
-    
-                    </div>
-                    
-                    <a href="photogallery/" id="view-more-a">Ver Más</a>
-    
-                </div>
-    
-            </section>
-    
-        </main>
-    
-        <footer>
-              <link rel="stylesheet" href="include/style/footer.css">
-    
-              <img src="include/img/logo-1.png">
-        
-            <div class="footer-info">
-    
-                <div class="footer-center">
-                    <a href="#home">Inicio</a>
-                    <a href="about/">El Clan</a>
-                    <a href="photogallery/">Fotogalería</a>
-                    <a href="dps/">Proyecto: DPS24</a>
-                </div>
-        
-                <div class="footer-right">
-                    <p>Correo: <a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
-                    <p>Dirección: C. Haza de Acosta, 61, 04009 Almería</p>
-                </div>
-    
+            <div class="proyect proyect-fesbal">
+                <span><i>Acción de Servicio</i></span>
+                <h2>Voluntariado en Fesbal</h2>
+                <p>Una de las palabras por la que se define la rama ruta es servir. Algunos de los objetivos que el clan Nyeri quiere realizar a lo largo de la etapa es la realización de voluntariado. La primera acción de servicio que realizó el clan, fué la colaboración en las jornadas de invierno de recogida de alimentos organizada por la Federación Española de Bancos de Almientos (FESBAL).</p>
+                <button id="pp-fesbal-btn"><i class="fa-solid fa-link"></i> <span>Conoce Fesbal</span></button>
             </div>
-            
-        </footer>
+
+            <button id="phr-more">Todos los Proyectos</button>
+
+        </div>
+
+    </section>
+
+    <section id="photogallery">
+
+        <h1>Fotogalería</h1>
+
+        <div class="photogallery-content">
+
+            <div class="pc-container">
+
+                <div class="pc-card">
+                    <div class="pc-img-container">
+                        <img class="pc-img" src="include/assets/photogallery/2024/almocita-13.jpg"/>
+                    </div>
+                </div>
+                
+                <div class="pc-card">
+                    <div class="pc-img-container">
+                        <img class="pc-img" src="include/assets/images/img-04.jpg"/>
+                    </div>
+                </div>
+                
+                <div class="pc-card">
+                    <div class="pc-img-container">
+                        <img class="pc-img" src="include/assets/images/img-05.jpg"/>
+                    </div>
+                </div>
+
+                <div class="pc-card">
+                    <div class="pc-img-container">
+                        <img class="pc-img" src="include/assets/images/img-06.jpg"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="pb-gallery-button"><i class="fa-solid fa-image"></i> Ver Fotogalería</button>
+
+        </div>
+
+    </section>
     
-        <script src="include/lib/jquery-3.7.1.min.js"></script>
-        <script type="module" src="include/scripts/photogallery.js"></script>
+    <footer>
+        <nav id="fn-left">
+            <img src="include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
+        </nav>
+        <nav id="fn-right">
 
-    </content>
+            <div class="fnr-up">
+                <a href="https://www.instagram.com/clan.nyeri/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:nyeri.clan@gmail.com"><i class="fa-solid fa-envelope"></i>nyeri.clan@gmail.com</a>
+            </div>
 
+            <p id="fnr-p">C. Haza de Acosta, 61, 04009 Almería</p>
+
+            <div class="fnr-down">
+                <a href="./">Inicio</a>
+                <a href="about/">El Clan</a>
+                <a href="proyects/">Proyectos</a>
+                <a href="photogallery/">Fotogalería</a>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="include/lib/jquery-3.7.1.min.js"></script>
+
+    <script src="include/scripts/content/index/about.js"></script>
+    <script src="include/scripts/content/index/proyects.js"></script>
+    <script src="include/scripts/content/index/photogallery.js"></script>
+    <script src="include/scripts/content/photogallery/main.js"></script>
+    <script src="include/scripts/navbar.js"></script>
+    
 </body>
 </html>

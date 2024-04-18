@@ -1,0 +1,1 @@
+$(".pc-img").mousemove(function(t){var s=t.pageX-$(this).offset().left,o=t.pageY-$(this).offset().top;$(this).css("transform","translate("+(s-300)/40+"px,"+(o-200)/40+"px)")}),$(".pc-img").mouseout(function(){$(this).css("transform","translate(0px,0px)")});

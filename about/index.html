@@ -3,204 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Clan Nyeri - Sobre Nosotros</title>
-    <link rel="icon" href="../include/img/logo.png">
+    <title>Clan Nyeri - El Clan</title>
+    <link rel="icon" href="../include/assets/logo.svg">
 
     <link rel="stylesheet" href="../include/style/main.css">
-    <link rel="stylesheet" href="../include/style/fonts.css">
-    <link rel="stylesheet" href="../include/lib/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
-
-    <link rel="stylesheet" href="../include/style/header-nav.css">
+    <link rel="stylesheet" href="../include/style/navs/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../include/style/content/about.css">
+    <link rel="stylesheet" href="../include/style/content/index/about.css">
+    <link rel="stylesheet" href="../include/style/navs/footer.css">
 
 </head>
 <body>
 
-    <div class="loading">
-        <link rel="stylesheet" href="../include/style/loader.css">
-        <div class="loader-container">
-            <img src="../include/img/logo.png">
-            <svg viewBox="25 25 50 50">
-                <circle r="20" cy="50" cx="50"></circle>
-            </svg>
-        </div>
-        <script>
-            setTimeout(function() {
-                document.querySelector('.loading img').style.opacity = '1';
-                document.querySelector('.loading svg').style.opacity = '1';
-            }, 0);
-            setTimeout(function() {
-                var loading = document.querySelector('.loading');
-                var content = document.querySelector('content')
-                loading.style.opacity = '0';
-                setTimeout(function() {
-                    loading.style.display = 'none';
-                    content.style.display = 'block';
-                    
-                    setTimeout(function() {
-                        content.style.opacity = '1';
-                    }, 250);
-                    
-                }, 500);
-            }, 4000);
-        </script>
+    <header>
+        <nav id="hn-left">
+            <a href="../">
+                <img src="../include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
+            </a>
+        </nav>
+    
+        <nav id="hn-right">
+            <ul id="hnr-horizontal">
+                <li id="hn-button-home"><a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a></li>
+                <li id="hn-button-about"><a style="color: var(--primary);" href="#">El Clan</a></li>
+                <li id="hn-button-photogallery"><a href="#about-page">Sobre Nosotros</a></li>
+                <li id="hn-button-photogallery"><a href="#documents">Documentos</a></li>
+                <li id="hn-button-instagram">
+                    <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <nav id="hn-toggle">
+            <button id="hn-toggle-button"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay">
+
+        <button id="no-close"><i class="fa-solid fa-xmark"></i></button>
+    
+        <ul id="nvo-content">
+            <li id="hn-button-home"><a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a></li>
+            <li id="hn-button-about"><a style="color: var(--primary);" href="#">El Clan</a></li>
+            <li id="hn-button-photogallery"><a href="#about-page">Sobre Nosotros</a></li>
+            <li id="hn-button-photogallery"><a href="#documents">Documentos</a></li>
+            <!-- <li id="hn-button-shop"><a href="#">Tienda</a></li> -->
+        </ul>
+    
+        <img src="../include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
+    
     </div>
 
-    <content>
+    <section id="separator"></section>
 
-        <div class="custom-cursor">
-            <link rel="stylesheet" href="../include/style/cursor.css">
-            <script src="../include/scripts/cursor.js"></script>
+    <section id="about-page">
+        <div class="about-content">
+            <div class="ac-left"></div>
+            <div class="ac-right">
+                <h1>Sobre Nosotros</h1>
+                <p>El Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz.<br><br>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano.<br><br>¿Quieres saber cómo continúa la historia?</p>
+                <div class="acr-buttons">
+                    <button id="acrb-proyects"><i class="fa-solid fa-hand-holding-hand"></i> Proyectos</button>
+                    <button id="acrb-read-more"><i class="fa-solid fa-arrow-left"></i> Volver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents">
+        <h1>Documentos Oficiales</h1>
+
+        <div class="documents-links">
+            <a href="docs/carta-constitución.pdf"><i class="fa-regular fa-file-pdf"></i>Carta de Constitución (776KB)</a>
+            <a href="docs/constitución-clan.pdf"><i class="fa-regular fa-file-pdf"></i>Constitución de Clan (834KB)</a>
+            <a href="docs/plantilla-clan.dotx"><i class="fa-regular fa-file-word"></i>Plantilla Clan (253KB)</a>
+            <a href="docs/identidad-corporativa.pdf"><i class="fa-regular fa-file-pdf"></i>Identidad (2.081KB)</a>
         </div>
 
-        <nav id="index-nav-fixed">
-            
-            <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
+    </section>
 
-            <div class="in-links">
-                
-                <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-                <a href="#about">Sobre Nosotros</a>
-                <a href="#documents">Documentos</a>
-
-                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-
-                <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-
-            </div>
-
+    <footer id="footer-other-pages">
+        <nav id="fn-left">
+            <img src="../include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
         </nav>
+        <nav id="fn-right">
 
-        <header id="index-header">
-
-            <img src="../include/img/logo.png" alt="Clan Nyeri Logo">
-            
-            <h1>
-                <span>Clan</span>
-                <i class="asset-01"></i>
-                <span>Nyeri</span>
-            </h1>
-
-            <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-        </header>
-
-        <nav id="index-nav"><div></div>
-
-            <div class="in-links">
-                
-                <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-                <a href="#about">Sobre Nosotros</a>
-                <a href="#documents">Documentos</a>
-
-                <a id="in-icons" href="https://www.instagram.com/clan.nyeri/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a id="in-icons" href="mailto:nyericlan@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-
-                <a href="../dps/" id="dps24-btn">Día del Pensamiento Scout</a>
-
+            <div class="fnr-up">
+                <a href="https://www.instagram.com/clan.nyeri/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:nyeri.clan@gmail.com"><i class="fa-solid fa-envelope"></i>nyeri.clan@gmail.com</a>
             </div>
 
-        <div></div></nav>
+            <p id="fnr-p">C. Haza de Acosta, 61, 04009 Almería</p>
 
-        <main>
-            <section id="about">
-                <link rel="stylesheet" href="../include/style/sections/about.css">
-
-                <style>
-                    #title-about-page {margin-top: 3em;}
-                </style>
-
-                <h1 id="title-about-page" class="title">Sobre el Clan</h1>
-
-                <div class="about-content">
-                    
-                    <img src="../include/img/asset-05.jpg">     
-                    
-                    <div class="ac-left">
-                        
-                        <p><span>E</span>l Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz. <br><br>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano. <br><br>¿Quieres saber cómo continúa la historia?</p>
-                        
-                        <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver</a>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="documents">
-                <link rel="stylesheet" href="../include/style/pages/about.css">
-
-                <h1 class="title">Documentos Oficiales</h1>
-
-                <div class="documents-content">
-
-                    <a class="dc-card" href="./carta-constitución.pdf">
-                        <i class="fa-regular fa-file-pdf"></i>
-                        <span>Carta de Constitución (776KB)</span>
-                    </a>
-
-                    <a class="dc-card" href="./constitución-clan.pdf">
-                        <i class="fa-regular fa-file-pdf"></i>
-                        <span>Constitución de Clan (834KB)</span>
-                    </a>
-
-                    <a class="dc-card" href="./plantilla-clan.dotx">
-                        <i class="fa-regular fa-file-word"></i>
-                        <span>Plantilla Clan (253KB)</span>
-                    </a>
-
-                    <a class="dc-card" href="./identidad-corporativa.pdf">
-                        <i class="fa-regular fa-file-pdf"></i>
-                        <span>Identidad (2.081KB)</span>
-                    </a>
-
-                </div>
-
-            </section>
-
-            <div class="gb-container">
-                <a href="../" id="go-back-btn"><i class="fa-solid fa-arrow-left"></i> Volver</a>
+            <div class="fnr-down">
+                <a href="../">Inicio</a>
+                <a href="#">El Clan</a>
+                <a href="../proyects/">Proyectos</a>
+                <a href="../photogallery/">Fotogalería</a>
             </div>
+        </nav>
+    </footer>
 
-        </main>
-
-        <footer>
-            <link rel="stylesheet" href="../include/style/footer.css">
-
-            <img src="../include/img/logo-1.png">
-    
-            <div class="footer-info">
-
-                <div class="footer-center">
-                    <a href="../#home">Inicio</a>
-                    <a href="#">El Clan</a>
-                    <a href="../photogallery/">Fotogalería</a>
-                    <a href="../photogallery/">Proyecto: DPS24</a>
-                </div>
-        
-                <div class="footer-right">
-                    <p>Correo: <a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
-                    <p>Dirección: C. Haza de Acosta, 61, 04009 Almería</p>
-                </div>
-
-            </div>
-        
-        </footer>
-        
-    </content>
+    <script src="../include/lib/jquery-3.7.1.min.js"></script>
+    <script src="../include/scripts/content/about/main.js"></script>
+    <script src="../include/scripts/navbar.js"></script>
     
 </body>
 </html>

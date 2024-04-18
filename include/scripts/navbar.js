@@ -1,0 +1,1 @@
+document.getElementById("hn-toggle-button").addEventListener("click",function(e){e.preventDefault(),document.getElementById("nav-overlay").style.display="block"}),document.getElementById("no-close").addEventListener("click",function(e){e.preventDefault(),document.getElementById("nav-overlay").style.display="none"});

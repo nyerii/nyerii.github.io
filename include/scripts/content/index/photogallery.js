@@ -1,0 +1,1 @@
+document.getElementById("pb-gallery-button").addEventListener("click",function(t){t.preventDefault(),location.href="photogallery"}),$(document).ready(function(){$(window).scroll(function(){$(window).scrollTop()>$("#photogallery").offset().top-$(window).height()+200&&$("#photogallery").css("opacity","1")})});

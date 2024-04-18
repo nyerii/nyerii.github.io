@@ -1,0 +1,1 @@
+document.getElementById("pb-gallery-button").addEventListener("click",function(e){location.href="../"});
