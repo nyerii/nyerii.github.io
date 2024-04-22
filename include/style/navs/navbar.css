@@ -15,10 +15,22 @@ header {
     z-index: 1111;
 }
 
-#hn-left a img {
+#hn-left {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#hn-left #hnl-1 img {
     width: 5em;
     transition: all ease-in .3s;
 }
+
+#hn-left #hnl-2 img {
+    width: 10em;
+    transition: all ease-in .3s;
+}
+
 #hn-right #hnr-horizontal {
     list-style: none;
     display: flex;
@@ -129,7 +141,7 @@ header {
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     #hn-right {
         display: none;
     }

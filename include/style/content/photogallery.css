@@ -1,4 +1,4 @@
-#photogallery-page h2, #photogallery-page h1 {
+#photogallery-page-2 h1, #photogallery-page h2, #photogallery-page h1 {
     font-family: "EB Garamond", serif;
     color: var(--light);
     
@@ -7,9 +7,12 @@
     text-align: center;
 }
 
-#photogallery-page h1 {
+#photogallery-page-2 h1, #photogallery-page h1 {
     text-transform: uppercase;
 }
 
 
+
+
 #photogallery-page {width: 100%;height: unset;height: 100%;margin-bottom: 2em;opacity: 1;transition: opacity 1s ease-in-out;}
+#photogallery-page-2 {padding: 2em;width: 100%;height: unset;height: 100%;margin-bottom: 2em;opacity: 1;transition: opacity 1s ease-in-out;}

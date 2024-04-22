@@ -27,6 +27,21 @@
     border-radius: 5px;
 }
 
+.ac-left-2 {
+    height: fill;
+    width: 20em;
+    background: url('../../../assets/asset-04.jpg');
+    background-size: cover;
+    border-radius: 5px;
+}
+.ac-left-3 {
+    height: fill;
+    width: 20em;
+    background: url('../../../assets/dps/asset-17.jpg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
 .ac-right {
     margin-left: 2em;
 }
@@ -72,7 +87,7 @@
         flex-direction: column-reverse;
         text-align: center;
     }
-    .ac-left {
+    .ac-left-3, .ac-left-2, .ac-left {
         margin-top: 1em;
         height: 20em;
         width: auto;
