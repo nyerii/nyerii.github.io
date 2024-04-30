@@ -1,6 +1,62 @@
 #home {
     height: 100vh;
     overflow: hidden;
-    background: url('../../../assets/asset-01.jpg');
+     background: url('../../../assets/images/img-07.png'); 
     background-size: cover;
+}
+
+#hc-logo-clan {
+    width: 10em;
+}
+
+.home-content {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+}
+
+
+#hct-p1 {
+    margin-top: 1em;
+    max-width: 500px;
+    text-align: justify;
+}
+
+#hct-p2 {
+    margin-top: 1em;
+}
+
+.hct-images {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.hct-images img {
+    width: 5em;
+}
+#hcti-fesbal {
+    height: 30px;
+    width: 30px;
+}
+
+#hc-btn {
+    margin-top: 1.5em;
+}
+
+#hc-btn a {
+    text-decoration: none;
+    color: var(--light);
+    padding: .5em 1em;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    #hct-p1 {max-width: unset;}
+    .home-content {width: 85%;}
 }
