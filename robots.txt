@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /index.html
+Allow: /about/
+Allow: /photogallery/
+Disallow: /include/
+Allow: /proyects/
+Allow: /proyects/dps24/
+Allow: /proyects/dps25/
+Allow: /proyects/tejiendo-historia/

@@ -39,9 +39,9 @@
 .hct-images img {
     width: 5em;
 }
-#hcti-fesbal {
+#hcti-radiomarca,#hcti-fesbal {
     height: 30px;
-    width: 30px;
+    width: auto;
 }
 
 #hc-btn {
