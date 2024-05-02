@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../include/style/navs/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../include/style/navs/footer.css">
-    <link rel="stylesheet" href="../../include/style/content/dps25-old.css">
+    <link rel="stylesheet" href="../../include/style/content/dps25.css">
 
 </head>
 <body>
@@ -28,7 +28,7 @@
         <nav id="hn-right">
             <ul id="hnr-horizontal">
                 <li id="hn-button-home"><a href="../../"><i class="fa-solid fa-arrow-left"></i> Volver</a></li>
-                <li id="hn-button-proyects"><a href="../">Proyectos</a></li>
+                <li id="hn-button-proyects"><a href="home">Inicio</a></li>
                 <li id="hn-button-proyects"><a style="color: var(--primary);" href="#">Día del Pensamiento Scout</a></li>
                 <li id="hn-button-instagram">
                     <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
@@ -60,20 +60,58 @@
     
     </div>
 
-    <section id="dps25">
-
+    <section id="home">
+        <div class="home-background"></div>
         <div class="dps25-content">
             <span><i>Sábado, 22 de febrero de 2025</i></span>
             <h1>Día del Pensamiento Scout 2025</h1>
             <span id="countdown">000 Días, 00h 00m 00s</span>
 
             <button id="save-to-calendar"><i class="fa-solid fa-calendar-days"></i> <span>Guardar en el Calendario</span></button>
-            <span id="dpsc-span-2">Pronto Más Información</span>
         </div>
-
     </section>
 
-    <div class="dps-banner"></div>
+    <div class="dps-banner-1">
+        <div class="db1-img">
+            <img src="../../include/assets/dps25/insignia.png" alt="Insginia del Día del Pensamiento Scout">
+        </div>
+    </div>
+
+    <section id="dps-info">
+        <div class="dpsi-content">
+            <div class="dpsic-left"></div>
+            <div class="dpsic-right">
+                <h1>El Proyecto</h1>
+                <p>El Día del Pensamiento Scout es un encuentro organizado por el Clan Nyeri con el objetivo de congregar a todos los Grupos Scouts de la provincia de Almería. En el año 2024, el Clan marcó un hito al organizar por primera vez este extraordinario evento. <br><br>Por segundo año consecutivo, nuestra querida ciudad de Almería volverá a celebrar tal extraordinaria celebración y desde el Clan Nyeri, ya nos hemos puesto manos a la obra para volver a realizar el mejor evento Scout del Año. <br><br>¿Quieres saber más? ¡Pronto más información! </p>
+                <div class="dpsicr-btns">
+                    <a href="#"><i class="fa-solid fa-file-pdf"></i> <span>Descargar Proyecto</span></a>
+                    <a href="https://www.behance.net/gallery/197625577/Dia-del-Pensamiento-Scout-2025-Branding" target="_blank"><i class="fa-solid fa-palette"></i> <span>Identidad Visual</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav id="fn-left">
+            <img src="../../include/assets/logo.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
+        </nav>
+        <nav id="fn-right">
+
+            <div class="fnr-up">
+                <a href="https://www.instagram.com/clan.nyeri/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:nyeri.clan@gmail.com"><i class="fa-solid fa-envelope"></i>nyeri.clan@gmail.com</a>
+            </div>
+
+            <p id="fnr-p">C. Haza de Acosta, 61, 04009 Almería</p>
+
+            <div class="fnr-down">
+                <a href="../..">Inicio</a>
+                <a href="../../about/">El Clan</a>
+                <a href="../">Proyectos</a>
+                <a href="../../photogallery/">Fotogalería</a>
+            </div>
+        </nav>
+    </footer>
 
     <script src="../../include/lib/jquery-3.7.1.min.js"></script>
     <script src="../../include/scripts/content/dps25/main-old.js"></script>
