@@ -1,8 +1,44 @@
-#dps25 {
+#home {
+    height: 100vh;
+    padding: 2em;
+}
+
+body {
+    background: var(--light);
+}
+
+.home-background {
+    z-index: -1;
+    background-color: var(--dark);
+    opacity: 1;
+    background-image: url('../../assets/dps25/bg.jpg');
+    background-size: cover;
     position: absolute;
-    top: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dps-banner-1 {
+    padding: 2em;
+    background: var(--light);
+    position: relative;
+}
+
+.db1-img {
+    position: absolute;
     left: 50%;
+    top: -50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.db1-img img {
+    width: 10em;
 }
 
 #save-to-calendar {
@@ -41,15 +77,65 @@
     margin-top: .5em;
 }
 
-.dps-banner {
-    z-index: -1;
-    background-color: var(--dark);
-    opacity: .5;
-    background-image: url('../../assets/asset-03.jpg');
-    background-size: cover;
+.dps25-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dpsicr-btns a {
+    text-decoration: none;
+    color: var(--light);
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    padding: .5em 1em;
+    transition: all ease-in .3s;
+}
+
+.dpsicr-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.dpsicr-btns a:nth-child(1) {
+    background: var(--primary);
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+
+.dpsicr-btns a:nth-child(2):hover {
+    background: var(--primary);
+}
+.dpsicr-btns a span {
+    margin-left: .5em;
+}
+
+.dpsic-right p {
+    color: var(--light);
+    margin-bottom: 2em;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.dpsic-right h1 {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: .5em;
+}
+
+#dps-info {
+    padding: 2em;
+    padding-top: 7em;
+    background: var(--dark);
+}
+
+.dpsi-content {
+    display: flex;
+    justify-content: center;
 }
