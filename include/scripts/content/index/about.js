@@ -1,1 +1,0 @@
-document.getElementById("acrb-proyects").addEventListener("click",function(e){location.href="proyects/"}),document.getElementById("acrb-read-more").addEventListener("click",function(e){location.href="about/"}),$(document).ready(function(){$(window).scroll(function(){$(window).scrollTop()>$("#about").offset().top-$(window).height()+200&&$("#about").css("opacity","1")})});

@@ -1,0 +1,12 @@
+#info {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.2rem;
+    margin-top: 1em;
+}

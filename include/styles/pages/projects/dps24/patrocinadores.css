@@ -1,0 +1,36 @@
+
+#patrocinadores {
+    padding-bottom: 3em;
+}
+
+@media only screen and (max-width: 550px) {
+    #patrocinadores h1 {
+        font-size: 2rem;
+    }
+}
+
+
+.patrocinadores-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    background: var(--light);
+    border-radius: .5em;
+    margin-top: 1em;
+}
+
+.patrocinadores-container img {
+    height: 3em;
+    filter: grayscale(100%);
+}
+
+.photogallery-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

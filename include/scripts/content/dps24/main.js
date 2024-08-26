@@ -1,1 +1,0 @@
-$(document).ready(function(){$(window).scroll(function(){$(window).scrollTop()>$("#about").offset().top-$(window).height()+200&&$("#about").css("opacity","1")}),$(document).ready(function(){$(window).scroll(function(){$(window).scrollTop()>$("#photogallery").offset().top-$(window).height()+200&&$("#photogallery").css("opacity","1")})})});

@@ -1,9 +1,16 @@
 User-agent: *
-Allow: /index.html
-Allow: /about/
-Allow: /photogallery/
-Disallow: /include/
-Allow: /proyects/
-Allow: /proyects/dps24/
-Allow: /proyects/dps25/
-Allow: /proyects/tejiendo-historia/
+Disallow: /.vscode
+Disallow: /.gitattributes
+Disallow: /include
+Disallow: /include/*
+Allow: /proyectos/template
+
+Allow: /fotogaleria
+Allow: /nosotros
+Allow: /proyectos
+Allow: /proyectos/dps24
+Allow: /proyectos/dps25
+Allow: /proyectos/tejiendo-historia
+Allow: /tienda
+
+Sitemap: https://www.clannyeri.com/sitemap.xml

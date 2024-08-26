@@ -1,0 +1,73 @@
+#about {
+    background: url("/include/assets/banners/banner-03.webp") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.about-content {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.about-content p span {
+    font-weight: bold;
+}
+
+.docs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#docs {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+#docs hr {
+    margin-bottom: 1em;
+}
+
+.docs-links-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.docs-links-container a {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: var(--light);
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.docs-links-container a:hover {
+    color: var(--primary);
+}
+
+.docs-links-container a svg {
+    width: 1.2em;
+    height: 1.2em;
+    fill: var(--light);
+    transition: 200ms;
+}
+
+.docs-links-container a:hover svg {
+    fill: var(--primary);
+}
+
+.docs-container h2 {
+    font-family: "EB Garamond", serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}

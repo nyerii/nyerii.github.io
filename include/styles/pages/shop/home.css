@@ -1,0 +1,18 @@
+#shop {
+    background: url("/include/assets/banners/banner-02.webp") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.shop-content {
+    min-height: 100vh;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
+
+.shop-content img {
+    width: 10em;
+}

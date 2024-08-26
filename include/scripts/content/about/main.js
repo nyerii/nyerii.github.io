@@ -1,1 +1,0 @@
-document.getElementById("acrb-proyects").addEventListener("click",function(e){location.href="../proyects/"}),document.getElementById("acrb-read-more").addEventListener("click",function(e){location.href="../"});

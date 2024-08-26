@@ -1,0 +1,87 @@
+
+._home-clannyeri_logo {
+    width: 10em;
+}
+
+#home {
+    background: url("/include/assets/banners/banner-01.webp") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.home-content {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.2rem;
+}
+
+.home-content p {
+    text-align: justify;
+}
+
+.home-logos-work {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.home-logos-work img {
+    width: 5em;
+}
+
+.home-logos-work-fesbal {
+    width: auto !important;
+    height: 30px !important;
+}
+
+@media screen and (max-width: 400px) {
+    ._home-clannyeri_logo {
+        width: 6em;
+    }
+ }
+
+
+@media screen and (max-width: 700px) {
+    #hct-p1 {max-width: unset;}
+    .home-content {width: 85%;}
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(calc(-125px * 6));}
+}
+
+.banner-slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    background: var(--light);
+    padding: 1em;
+}
+.bs-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    align-items: center;
+    width: calc(125px * 12);
+}
+
+.banner-slider .bst-slide  {
+    width: auto;
+    margin-left: 3em;
+}
+.banner-slider .bst-slide:nth-child(1) {
+    margin-left: unset;
+}
+.banner-slider .bst-slide img {
+    height: 3em;
+}
+
+#bsts-msc-logo {
+    height: 2em;
+}

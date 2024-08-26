@@ -1,0 +1,50 @@
+.pre-img-container-dp25 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -8em;
+}
+
+.pre-img-container-dp25 img {
+    max-height: 15em;
+    width: auto;
+}
+
+
+#info {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+
+.dps25-btn-disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.dps25-btn-disabled:hover {
+    background: var(--primary);
+    color: var(--light);
+    transform: unset;
+}
+
+.dps25-btn-disabled:hover svg {
+    fill: var(--light);
+}
+
+.pulsera {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.pulsera img {
+    height: 5em;
+}
