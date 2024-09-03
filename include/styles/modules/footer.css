@@ -17,11 +17,17 @@ footer {
 }
 
 .fnr-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
     margin-bottom: .5em;
 }
 
-.fnr-up a i {
-    margin-right: .5em;
+.fnr-up a  {
+    display: flex;
+    align-items: center;
+    gap: .5em;
 }
 
 .fnr-down a {
@@ -35,6 +41,12 @@ footer {
 footer * {
     color: var(--dark);
 }
+
+footer svg {
+    width: 1em;
+    height: 1em;
+}
+
 #footer-other-pages {
     margin-top: 1em;
     background: var(--dark);

@@ -17,6 +17,11 @@
     background-size: cover;
 }
 
+.home-asoc {
+    background: url('../../../assets/banners/banner-01.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
 .template-separator {
     height: 5em;
 }
