@@ -190,7 +190,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     #_header-child_2-item-ig, ._header-child_2 button {
         display: flex;
     }
