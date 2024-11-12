@@ -1,0 +1,3 @@
+[submodule "include/lib/slick"]
+    path = include/lib/slick
+    url = https://github.com/usuario/repo-slick.git
