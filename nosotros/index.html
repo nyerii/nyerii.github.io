@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Conocenos - Clan Nyeri</title>
 
-    <link rel="stylesheet" href="../include/styles/reset.css">
-    <link rel="stylesheet" href="../include/styles/vars.css">
-    <link rel="stylesheet" href="../include/styles/main.css">
+    <link rel="stylesheet" href="/include/styles/common/reset.css">
+    <link rel="stylesheet" href="/include/styles/common/vars.css">
+    <link rel="stylesheet" href="/include/styles/common/default.css">
 
-    <link rel="stylesheet" href="../include/styles/modules/header.css">
-    <link rel="stylesheet" href="../include/styles/modules/footer.css">
+    <link rel="stylesheet" href="/include/styles/modules/header.css">
+    <link rel="stylesheet" href="/include/styles/modules/footer.css">
 
-    <link rel="stylesheet" href="../include/styles/pages/about/home.css">
+    <link rel="stylesheet" href="/include/styles/pages/templates/banner.css">
+    <link rel="stylesheet" href="/include/styles/pages/projects/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../include/lib/animate.min.css">
+    <link rel="stylesheet" href="/include/lib/slick/slick/slick.css">
+    <link rel="stylesheet" href="/include/lib/slick/slick/slick-theme.css">
 
-    <meta name="description" content="Conoce acerca del Clan Ruta Nyeri - Scouts Católicos de Almería.">
-    <meta name="keywords" content="Scouts, DPS, Día del Pensamiento Scout, Rutas, SCA, MSC, Nyeri, Clan, rover, ade, almería, Voluntariado, Scout, Clan Nyeri">
+    <meta name="description" content="Conoce sobre el Clan Nyeri">
+    <meta name="keywords" content="Scouts, tejiendo hsitoria, Rutas, SCA, MSC, Nyeri, Clan, rover, ade, almería, Voluntariado, Scout, Clan Nyeri, asociación juvenil, asoc ">
 
     <meta name=author content="Carlos Padilla">
 
@@ -39,17 +40,17 @@
         
     <meta name=robots content="index, follow">
         
-    <meta name="twitter:title" content="Clan Nyeri">
-    <meta name="twitter:description" content="Conoce acerca del Clan Ruta Nyeri - Scouts Católicos de Almería">
-    <meta name="twitter:image" content="./include/assets/photogallery/2024/almocita-13.jpg">
+    <meta name="twitter:title" content="El Clan Nyeri">
+    <meta name="twitter:description" content="Conoce sobre el Clan Nyeri">
+    <meta name="twitter:image" content="/include/assets/banners/img-05.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@cpadlab">
     <meta name="twitter:creator" content="@cpadlab" />
     <meta name="twitter:domain" content="https://www.clannyeri.com/" />
 
-    <meta property="og:title" content="Clan Nyeri">
-    <meta property="og:description" content="Conoce acerca del Clan Ruta Nyeri - Scouts Católicos de Almería.">
-    <meta property="og:image" content="./include/assets/photogallery/2024/almocita-13.jpg">
+    <meta property="og:title" content="El Clan Nyeri">
+    <meta property="og:description" content="Conoce sobre el Clan Nyeri">
+    <meta property="og:image" content="/include/assets/banners/img-05.webp">
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clan Nyeri" />
@@ -59,210 +60,121 @@
     <meta name="application-name" content="Clan Nyeri" />
     <meta name="theme-color" content="#bb2020" />
 
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="sitemap" type="application/json" title="Sitemap" href="/sitemap.json">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest"> -->
+
 
 </head>
 <body>
 
-    <main>
-
-        <header class="_header">
-            <div class="_header-content">
-
-                <a href="/" class="_header-child_0" aria-label="Inicio" rel="noopener noreferrer" title="Vista la página de inicio del Clan Nyeri">
-                    <span hidden>Vista la página de inicio del Clan Nyeri</span>
-                    <img src="../include/assets/logos/clan_nyeri-logo-icon.svg" alt="Isotipo del Clan Nyeri" class="_header-child_0-img-isotipo">
-                    <img src="../include/assets/logos/clan_nyeri-logo-txt.png" alt="Logotipo del Clan Nyeri" class="_header-child_0-img-logotipo">
-                </a>
-    
-                <nav class="_header-child_1">
-                    <a href="/" class="_header-child_1-a" id="_header-child_1-a-inicio" aria-label="Inicio" rel="noopener noreferrer" title="Visita la página Inicio del Clan Nyeri">
-                        <span>Inicio</span>
-                    </a>
-                    <a href="/nosotros" class="_header-child_1-a" id="_header-child_1-a-el_clan" aria-label="El Clan" rel="noopener noreferrer" title="Conoce un poco más acerca del Clan Nyeri">
-                        <span>El Clan</span>
-                    </a>
-                    <a href="https://clannyeri.medium.com/" class="_header-child_1-a" id="_header-child_1-a-tienda" aria-label="Noticias" rel="noopener noreferrer" title="Últimas Noticias Clan Nyeri" hreflang="es" target="_blank">
-                        <span>Noticias</span>
-                    </a>
-                    <a href="/tienda" class="_header-child_1-a" id="_header-child_1-a-tienda" aria-label="Tienda" rel="noopener noreferrer" title="Visita la Tienda del Clan Nyeri" target="_blank">
-                        <span>Tienda</span>
-                    </a>
-                    <a href="/proyectos" class="_header-child_1-a" id="_header-child_1-a-proyectos" aria-label="Proyectos" rel="noopener noreferrer" title="Descubre todos los Proyectos del Clan Nyeri">
-                        <span>Proyectos</span>
-                    </a>
-                    <a href="/fotogaleria" class="_header-child_1-a" id="_header-child_1-a-fotogalería" aria-label="Fotogalería" rel="noopener noreferrer" title="Visita la Fotogalería del Clan Nyeri">
-                        <span>Fotogalería</span>
-                    </a>
-
-                    <div class="_header-child_2">
-    
-                        <a class="_header-child_2-item" href="https://www.instagram.com/clan.nyeri/" aria-label="Instagram" rel="noopener noreferrer" title="¡Siguenos en nuestra cuenta de Instagram: @clan.nyeri! ">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                            <span class="_tooltip">Instagram</span>
-                        </a>
-        
-                        <button class="_header-child_2-item" onclick="_toggleHeader()">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-                            <span class="_tooltip">Menú</span>
-                        </button>
-        
-                    </div>
-
-                </nav>
-
-            </div>
-        </header>
-
-        <div class="_hidden-nav">
-            <button id="_hidden-nav-float-btn" onclick="_toggleHeader()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                <span hidden>Cerrar Menu</span>
-            </button>
+    <header class="_header">
+        <a href="/">
+            <img src="/include/assets/logos/clan_nyeri-logo-icon.svg" alt="Logo del Clan Nyeri">
+        </a>
+        <div>
             <nav>
-                <a href="/" aria-label="Inicio" rel="noopener noreferrer" title="Visita la página Inicio del Clan Nyeri">
-                    <span>Inicio</span>
-                </a>
-                <a href="/nosotros" aria-label="El Clan" rel="noopener noreferrer" title="Conoce un poco más acerca del Clan Nyeri">
-                    <span>El Clan</span>
-                </a>
-                <a href="https://clannyeri.medium.com/" aria-label="Noticias" rel="noopener noreferrer" title="Lee los artículos del Clan Nyeri" hreflang="es" target="_blank">
-                    <span>Noticias</span>
-                </a>
-                <a href="/tienda" aria-label="Tienda" rel="noopener noreferrer" title="Visita la Tienda del Clan Nyeri" target="_blank">
-                    <span>Tienda</span>
-                </a>
-                <a href="/proyectos" aria-label="Proyectos" rel="noopener noreferrer" title="Descubre todos los Proyectos del Clan Nyeri">
-                    <span>Proyectos</span>
-                </a>
-                <a href="/fotogaleria" aria-label="Fotogalería" rel="noopener noreferrer" title="Visita la Fotogalería del Clan Nyeri">
-                    <span>Fotogalería</span>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/"><span>Inicio</span></a>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/nosotros/"><span>El Clan</span></a>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/asociacion"><span>La Asociación</span></a>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/proyectos/"><span>Proyectos</span></a>
+                <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                    <span hidden>Instagran</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                 </a>
             </nav>
+            <button id="toggle_hiddenbar" onclick="openNavbar()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
         </div>
+    </header>
 
-        <section id="about">
-            <div class="section-width">
-
-                <div class="about-content">
-                    
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <h1 class="default-h1-title">El Clan</h1></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <p>El Clan Nyeri, es un clan ruta <span>perteneciente a la agrupación Cabo de Venus</span> fundado en septiembre de 2023, y <span>constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena</span>. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, <span>están realizando grandes proyectos sobrepasando los límites de la rama</span> y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz.</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <p><span>En su corta trayectoria como clan</span>, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. <span>Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio</span> de los grandes planes que tiene el clan a un futuro cercano.</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <p>A principios del mes de noviembre del pasado 2023, el Clan <span>realizó un voluntariado con la organización FESBAL</span>, donde ayudaron y recogieron alimentos en las jornadas de invierno de la federación. Posteriormente, <span>emprendió el proyecto del Día del Pensamiento Scout 2024</span> para finalizarlo en una gran evento el 24 de febrero de 2024. Poco después, el Clan <span>realizó su primer gran extrajob, ¡Tejiendo Historia!</span>, un extrajob que buscaba conmemorar el cuarto de siglo de historia de nuestra querida ADE.</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <p>A finales de abril de 2024, Nyeri empezó a crear el proyecto del Día del Pensamiento Scout 2025, proyecto en el que estan trabajando para que el próximo 22 de febrero de 2025, todos los scouts de almería se reunan en otro gran encuentro. El último proyecto en el que trabaja el Clan, es en <span>la consitiución de la Asociación Juvenil Sin Ánimo de Lucro: Amigos de Nyeri</span>, para poder seguir profesionalizando cada trabajo y proyecto que realiza el clan.</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <p>¿Quieres saber cómo continúa la historia?</p></div>
-
-                </div>
-                
+    <div class="hidden-navbar">
+        <div class="hidden-navbar-content">
+            <div class="close_hidden-navbar-container">
+                <button id="close_hidden-navbar" onclick="closeNavbar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </button>
             </div>
-        </section>
-
-        <section id="docs">
-            <div class="section-width">
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                <h1 class="default-h1-title">Documentos</h1></div>
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><hr></div>
-
-                <div class="docs-container">
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><h2>Documentos de la Asociación</h2></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><div class="docs-links-container">
-                        <a aria-label="Estatutos" rel="noopener noreferrer" title="Lee los estatutos Tiendade la Asociación Juvenil sin ánimo de lucro: Amigos del Nyeri">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
-                            <span>Estatutos (No Disponible)</span>
-                        </a>
-                    </div></div>
-                </div>
-
-                <div class="docs-container">
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <h2>Documentos del Clan</h2></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="docs-links-container">
-                        <a href="../include/content/carta-constitución.pdf" aria-label="Carta de Constitución" rel="noopener noreferrer" title="Lee la carta de constitución del Clan Nyeri" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
-                            <span>Carta de Constitución (776KB)</span>
-                        </a>
-                        <a href="../include/content/constitución-clan.pdf" aria-label="Constitución del Clan" rel="noopener noreferrer" title="Lee la Constitución del Clan Nyeri" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
-                            <span>Constitución del Clan (834KB)</span>
-                        </a>
-                    </div></div>
-                </div>
-
-                <div class="docs-container">
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <h2>Otros Documentos</h2></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="docs-links-container">
-                        <a href="../include/content/plantilla-clan.dotx" aria-label="Constitución del Clan" rel="noopener noreferrer" title="Lee la Constitución del Clan Nyeri" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM111 257.1l26.8 89.2 31.6-90.3c3.4-9.6 12.5-16.1 22.7-16.1s19.3 6.4 22.7 16.1l31.6 90.3L273 257.1c3.8-12.7 17.2-19.9 29.9-16.1s19.9 17.2 16.1 29.9l-48 160c-3 10-12 16.9-22.4 17.1s-19.8-6.2-23.2-16.1L192 336.6l-33.3 95.3c-3.4 9.8-12.8 16.3-23.2 16.1s-19.5-7.1-22.4-17.1l-48-160c-3.8-12.7 3.4-26.1 16.1-29.9s26.1 3.4 29.9 16.1z"/></svg>
-                            <span>Plantilla (252KB)</span>
-                        </a>
-                        <a href="../include/content/identidad-corporativa.pdf" aria-label="Constitución del Clan" rel="noopener noreferrer" title="Lee la Constitución del Clan Nyeri" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
-                            <span>Identidad Visual (947KB)</span>
-                        </a>
-                        <a href="../proyectos/dps25" aria-label="Proyecto DPS25" rel="noopener noreferrer" title="Descubre el Proyecto del Día del Pensamiento Scout 2025">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
-                            <span>Proyecto DPS25 (Links)</span>
-                        </a>
-                    </div></div>
-                </div>
-
-            </div>
-        </section>
-
-        <footer>
-            <nav id="fn-left"><img src="../include/assets/logos/clan_nyeri-logo-icon.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo"></nav>
-            <nav id="fn-right">
-    
-                <div class="fnr-up">
-                    <a href="https://www.instagram.com/clan.nyeri/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                    <a href="mailto:nyeri.clan@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>nyeri.clan@gmail.com</a>
-                </div>
-    
-                <p id="fnr-p">C. Rafael Calatrava no7 Bajo, 04006 Almería</p>
-    
-                <div class="fnr-down">
-                    <a href="/">Inicio</a>
-                    <a href="/nosotros/">El Clan</a>
-                    <a href="/proyectos/">Proyectos</a>
-                    <a href="/fotogaleria/">Fotogalería</a>
-                </div>
+            <nav>
+                <a href="https://www.clannyeri.com/"><span>Inicio</span></a>
+                <a href="https://www.clannyeri.com/nosotros/"><span>El Clan</span></a>
+                <a href="https://www.clannyeri.com/asociacion"><span>La Asociación</span></a>
+                <a href="https://www.clannyeri.com/proyectos/"><span>Proyectos</span></a>
             </nav>
-        </footer>
+            <p>Copyright © 2024 <a href="/">Asociación Juvenil Nyeri</a> - All rights reserved</p>
+        </div>
+    </div>
+
+    <main>
+        
+        <section id="banner" class="banner">
+            <div class="banner-bg">
+                <img src="/include/assets/banners/img-05.webp" alt="Foto de grupo del Clan Nyeri">
+            </div>
+            <div class="banner-content">
+                <h1>El Clan Nyeri</h1>
+                <div class="banner-separator"></div>
+            </div>
+        </section>
+
+        <section id="about" class="tejiendo_historia-container">
+            <h2 class="default-title">Nuestra Historia</h2>
+            <div class="projects-container_tejiendo_historia" style="margin-top: 1em;">
+                <p>El Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, esta formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz.</p>
+                <p>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano.</p>
+                <p>A principios del mes de noviembre del pasado 2023, el Clan realizó un voluntariado con la organización FESBAL, donde ayudaron y recogieron alimentos en las jornadas de invierno de la federación. Posteriormente, emprendió el proyecto del Día del Pensamiento Scout 2024 para finalizarlo en una gran evento el 24 de febrero de 2024. Poco después, el Clan realizó su primer gran extrajob, ¡Tejiendo Historia!, un extrajob que buscaba conmemorar el cuarto de siglo de historia de nuestra querida ADE.</p>
+                <p>A finales de abril de 2024, Nyeri empezó a crear el proyecto del Día del Pensamiento Scout 2025, proyecto en el que estan trabajando para que el próximo 22 de febrero de 2025, todos los scouts de almería se reunan en otro gran encuentro. El último proyecto en el que trabaja el Clan, es en la consitiución de la Asociación Juvenil Sin Ánimo de Lucro: Amigos de Nyeri, para poder seguir profesionalizando cada trabajo y proyecto que realiza el clan.</p>
+                <p>¿Quieres saber cómo continúa la historia?</p>
+            </div>
+        </section>
+
+        <section id="docs" class="docs">
+            <h2 class="default-title">Documentos</h2>
+            <div class="docs-container">
+                <a target="_blank" href="/dowloads/carta-constitución.pdf">Carta de Constitución (776KB)</a>
+                <a target="_blank" href="/dowloads/carta-constitución.pdf">Constitución del Clan (834KB)</a>
+                <a target="_blank" href="/dowloads/carta-constitución.pdf">Plantilla (252KB) [Desactualizada]</a>
+                <a target="_blank" href="/dowloads/identidad-corporativa.pdf">Identidad Visual (947KB)</a>
+            </div>
+        </section>
 
     </main>
 
-    <script src="../include/lib/jquery-3.7.1.min.js"></script>
-    <script src="../include/lib/jquery.scrolla.min.js"></script>
+    <footer>
+        <div class="footer-row1">
+            <div class="footer-logo">
+                <img src="/include/assets/logos/clan_nyeri-logo-icon.svg" alt="">
+            </div>
+            <nav>
+                <a href="https://www.clannyeri.com/">Inicio</a>
+                <a href="https://www.clannyeri.com/nosotros/">El Clan</a>
+                <a href="https://www.clannyeri.com/asociacion">La Asociación</a>
+                <a href="https://www.clannyeri.com/fotogaleria/">Fotogalería</a>
+                <a href="https://www.clannyeri.com/calendario/">Calendario 24/25</a>
+            </nav>
+            <nav>
+                <a href="https://www.clannyeri.com/actualidad/">Actualidad</a>
+                <a href="https://clannyeri.medium.com/">Blog</a>
+                <a href="https://www.clannyeri.com/proyectos/">Proyectos</a>
+                <a href="https://www.clannyeri.com/proyectos/dps25/">Día del Pensamiento Scout 2025</a>
+                <a href="https://www.clannyeri.com/proyectos/sonrisas-navideñas/">Sonrisas Navideñas</a>
+            </nav>
+            <nav>
+                <a href="https://www.clannyeri.com/politica-de-cookies/">Política de Cookies</a>
+                <a href="https://www.clannyeri.com/politica-de-cookies/">Aviso Legal</a>
+            </nav>
+        </div>
+        <div>
+            <p style="margin-bottom: .5em;"><a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
+            <p>Copyright © 2024 <a href="/">Asociación Juvenil Nyeri</a> - All rights reserved</p>
+            <p style="margin-top: .5em;">Developed by <a href="https://cpadlab.github.io/" target="_blank">Carlos Padilla</a></p>
+        </div>
+    </footer>
 
-    <script src="../include/script/modules/header.js"></script>
+    <script src="/include/lib/jquery-3.7.1.min.js"></script>
 
-    <style>
-        .add-animate {
-            opacity: 0;
-        }
-    </style>
+    <script src="/include/scripts/header.js"></script>
 
-    <script>
-        
-        $('.add-animate').scrolla({
-            mobile: true,
-            once: true,
-        })
-
-    </script>  
-    
 </body>
 </html>

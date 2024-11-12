@@ -1,0 +1,58 @@
+.links-section {
+    margin-top: 5em;
+    padding: 2em;
+}
+
+.links-container {
+    display: flex;
+    gap: 2em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.links-card-container {
+    padding: 1em;
+    display: flex;
+    min-width: 290px;
+    flex-direction: column;
+    background: var(--zinc-800);
+    border: 1px solid var(--zinc-600);
+    border-radius: 1em;
+}
+
+.links-card-container h4 {
+    color: var(--zinc-100);
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "EB Garamond", serif;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.links-card-container nav {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.links-card-container nav a {
+    color: var(--zinc-100);
+    text-decoration: none;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.links-card-container nav a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 1em;
+    background: var(--zinc-100);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

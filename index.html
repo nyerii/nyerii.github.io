@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clan Nyeri - Asociación Juvenil</title>
 
-    <link rel="stylesheet" href="./include/styles/reset.css">
-    <link rel="stylesheet" href="./include/styles/vars.css">
-    <link rel="stylesheet" href="./include/styles/main.css">
+    <link rel="stylesheet" href="/include/styles/common/reset.css">
+    <link rel="stylesheet" href="/include/styles/common/vars.css">
+    <link rel="stylesheet" href="/include/styles/common/default.css">
 
-    <link rel="stylesheet" href="./include/styles/modules/header.css">
-    <link rel="stylesheet" href="./include/styles/modules/footer.css">
+    <link rel="stylesheet" href="/include/styles/modules/header.css">
+    <link rel="stylesheet" href="/include/styles/modules/footer.css">
 
-    <link rel="stylesheet" href="./include/styles/pages/index/home.css">
-    <link rel="stylesheet" href="./include/styles/pages/index/about.css">
-    <link rel="stylesheet" href="./include/styles/pages/index/shop.css">
-    <link rel="stylesheet" href="./include/styles/pages/index/projects.css">
-    <link rel="stylesheet" href="./include/styles/pages/index/photogallery.css">
-    <link rel="stylesheet" href="./include/styles/pages/index/blog.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/home.scroller.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/calendar.section.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/projects.highlight.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/news.section.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/contact.section.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/photogallery.section.css">
+    <link rel="stylesheet" href="/include/styles/pages/index/projecto.temporal.section.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./include/lib/animate.min.css">
+    <link rel="stylesheet" href="/include/lib/slick/slick/slick.css">
+    <link rel="stylesheet" href="/include/lib/slick/slick/slick-theme.css">
 
-    <title>Clan Nyeri</title>
-
-    <meta name="description" content="Página Web Oficial del Clan Ruta Nyeri - Scouts Católicos de Almería.">
-    <meta name="keywords" content="Scouts, DPS, Día del Pensamiento Scout, Rutas, SCA, MSC, Nyeri, Clan, rover, ade, almería, Voluntariado, Scout, Clan Nyeri">
+    <meta name="description" content="Página Web Oficial de la Asociación Juvenil Nyeri - Clan Ruta Nyeri">
+    <meta name="keywords" content="Scouts, DPS, Día del Pensamiento Scout, Rutas, SCA, MSC, Nyeri, Clan, rover, ade, almería, Voluntariado, Scout, Clan Nyeri, asociación juvenil, asoc ">
 
     <meta name=author content="Carlos Padilla">
 
@@ -48,16 +46,16 @@
     <meta name=robots content="index, follow">
         
     <meta name="twitter:title" content="Clan Nyeri">
-    <meta name="twitter:description" content="Página Web Oficial del Clan Ruta Nyeri - Scouts Católicos de Almería">
-    <meta name="twitter:image" content="./include/assets/photogallery/2024/almocita-13.jpg">
+    <meta name="twitter:description" content="Página Web Oficial de la Asociación Juvenil Nyeri - Clan Ruta Nyeri">
+    <meta name="twitter:image" content="/include/assets/photogallery/2024/almocita-13.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@cpadlab">
     <meta name="twitter:creator" content="@cpadlab" />
     <meta name="twitter:domain" content="https://www.clannyeri.com/" />
 
     <meta property="og:title" content="Clan Nyeri">
-    <meta property="og:description" content="Página Web Oficial del Clan Ruta Nyeri - Scouts Católicos de Almería.">
-    <meta property="og:image" content="./include/assets/photogallery/2024/almocita-13.jpg">
+    <meta property="og:description" content="Página Web Oficial de la Asociación Juvenil Nyeri - Clan Ruta Nyeri.">
+    <meta property="og:image" content="/include/assets/photogallery/2024/almocita-13.jpg">
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clan Nyeri" />
@@ -71,506 +69,286 @@
     <link rel="sitemap" type="application/json" title="Sitemap" href="/sitemap.json">
     <link rel="manifest" href="/site.webmanifest">
 
+
 </head>
 <body>
 
+    <header class="_header">
+        <a href="/">
+            <img src="/include/assets/logos/clan_nyeri-logo-icon.svg" alt="Logo del Clan Nyeri">
+        </a>
+        <div>
+            <nav>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/"><span>Inicio</span></a>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/nosotros/"><span>El Clan</span></a>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/asociacion"><span>La Asociación</span></a>
+                <a class="remove_4_mobile" href="https://www.clannyeri.com/proyectos/"><span>Proyectos</span></a>
+                <a href="https://www.instagram.com/clan.nyeri/" target="_blank">
+                    <span hidden>Instagran</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+            </nav>
+            <button id="toggle_hiddenbar" onclick="openNavbar()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="hidden-navbar">
+        <div class="hidden-navbar-content">
+            <div class="close_hidden-navbar-container">
+                <button id="close_hidden-navbar" onclick="closeNavbar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </button>
+            </div>
+            <nav>
+                <a href="https://www.clannyeri.com/"><span>Inicio</span></a>
+                <a href="https://www.clannyeri.com/nosotros/"><span>El Clan</span></a>
+                <a href="https://www.clannyeri.com/asociacion"><span>La Asociación</span></a>
+                <a href="https://www.clannyeri.com/proyectos/"><span>Proyectos</span></a>
+            </nav>
+            <p>Copyright © 2024 <a href="/">Asociación Juvenil Nyeri</a> - All rights reserved</p>
+        </div>
+    </div>
+
     <main>
 
-        <header class="_header">
-            <div class="_header-content">
+        <section id="home-section" class="home-section">
+            <div class="home-scroller"></div>
+        </section>
 
-                <a href="/" class="_header-child_0" aria-label="Inicio" rel="noopener noreferrer" title="Vista la página de inicio del Clan Nyeri" hreflang="es">
-                    <span hidden>Vista la página de inicio del Clan Nyeri</span>
-                    <img src="./include/assets/logos/clan_nyeri-logo-icon.svg" alt="Isotipo del Clan Nyeri" class="_header-child_0-img-isotipo">
-                    <img src="./include/assets/logos/clan_nyeri-logo-txt.png" alt="Logotipo del Clan Nyeri" class="_header-child_0-img-logotipo">
-                </a>
-    
-                <nav class="_header-child_1">
-                    <a href="/" class="_header-child_1-a" id="_header-child_1-a-inicio" aria-label="Inicio" rel="noopener noreferrer" title="Visita la página Inicio del Clan Nyeri" hreflang="es">
-                        <span>Inicio</span>
-                    </a>
-                    <a href="/nosotros" class="_header-child_1-a" id="_header-child_1-a-el_clan" aria-label="El Clan" rel="noopener noreferrer" title="Conoce un poco más acerca del Clan Nyeri" hreflang="es">
-                        <span>El Clan</span>
-                    </a>
-                    <a href="https://clannyeri.medium.com/" class="_header-child_1-a" id="_header-child_1-a-tienda" aria-label="Noticias" rel="noopener noreferrer" title="Últimas Noticias Clan Nyeri" hreflang="es" target="_blank">
-                        <span>Noticias</span>
-                    </a>
-                    <a href="/tienda" class="_header-child_1-a" id="_header-child_1-a-tienda" aria-label="Tienda" rel="noopener noreferrer" title="Visita la Tienda del Clan Nyeri" hreflang="es">
-                        <span>Tienda</span>
-                    </a>
-                    <a href="/proyectos" class="_header-child_1-a" id="_header-child_1-a-proyectos" aria-label="Proyectos" rel="noopener noreferrer" title="Descubre todos los Proyectos del Clan Nyeri" hreflang="es">
-                        <span>Proyectos</span>
-                    </a>
-                    <a href="/fotogaleria" class="_header-child_1-a" id="_header-child_1-a-fotogalería" aria-label="Fotogalería" rel="noopener noreferrer" title="Visita la Fotogalería del Clan Nyeri" hreflang="es">
-                        <span>Fotogalería</span>
-                    </a>
+        <section id="projects-section" class="projects-section">
 
-                    <div class="_header-child_2">
-    
-                        <a class="_header-child_2-item" id="_header-child_2-item-ig" href="https://www.instagram.com/clan.nyeri/" aria-label="Instagram" rel="noopener noreferrer" title="¡Siguenos en nuestra cuenta de Instagram: @clan.nyeri!" hreflang="es">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                            <span class="_tooltip">Instagram</span>
-                        </a>
-        
-                        <button class="_header-child_2-item" onclick="_toggleHeader()" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-                            <span class="_tooltip">Menú</span>
-                        </button>
-        
-                    </div>
+            <div class="projects-highlight">
 
-                </nav>
+                <div class="projects-highlight-title-container">
+
+                    <h2 class="default-title">Proyectos Destacados</h2>
+                    <a href="https://www.clannyeri.com/proyectos/">
+                        <span>Más Proyectos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg> 
+                    </a>
+                    
+                </div>
+
+                <div class="projects-highlight-container"></div>
+
+                <div class="projects-arrows">
+                    <button class="projects-arrow-prev projects-arrows-button projects-arrows-left"><span hidden>Previous Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></button>
+                    <button class="projects-arrow-next projects-arrows-button projects-arrows-right"><span hidden>Next Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+                </div>
 
             </div>
-        </header>
 
-        <div class="_hidden-nav">
-            <button id="_hidden-nav-float-btn" onclick="_toggleHeader()" aria-expanded="false" aria-controls="menu" aria-label="Cerrar Menu" role="button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                <span hidden>Cerrar Menu</span>
-            </button>
-            <nav>
-                <a href="/" aria-label="Inicio" rel="noopener noreferrer" title="Visita la página Inicio del Clan Nyeri" hreflang="es">
-                    <span>Inicio</span>
-                </a>
-                <a href="/nosotros" aria-label="El Clan" rel="noopener noreferrer" title="Conoce un poco más acerca del Clan Nyeri" hreflang="es">
-                    <span>El Clan</span>
-                </a>
-                <a href="https://clannyeri.medium.com/" aria-label="Noticias" rel="noopener noreferrer" title="Lee los artículos del Clan Nyeri" hreflang="es" target="_blank">
-                    <span>Noticias</span>
-                </a>
-                <a href="/tienda" aria-label="Tienda" rel="noopener noreferrer" title="Visita la Tienda del Clan Nyeri" hreflang="es">
-                    <span>Tienda</span>
-                </a>
-                <a href="/proyectos" aria-label="Proyectos" rel="noopener noreferrer" title="Descubre todos los Proyectos del Clan Nyeri" hreflang="es">
-                    <span>Proyectos</span>
-                </a>
-                <a href="/fotogaleria" aria-label="Fotogalería" rel="noopener noreferrer" title="Visita la Fotogalería del Clan Nyeri" hreflang="es">
-                    <span>Fotogalería</span>
-                </a>
-            </nav>
-        </div>
+        </section>
 
-        <section id="home">
-            <div class="section-width home-content">
+        <section class="projecto-temporal">
+
+            <div class="pt-container pt-container_1">
+
+                <div class="pt-container-left">
+                    <div class="pt-container-left-image"></div>
+
+                    <div class="pt-container-left-content">
+                        <div class="pt-container-left-content_1">
+                            <h2 class="default-title">Sonrisas Navideñas</h2>
+                            <h3>Una iniciativa de la Asociación Nyeri</h3>
+                            <div class="pt-container-left-content-separator"></div>
+                        </div>
+                        <div class="pt-container-left-content_2">
+                            <p>Nyeri se ha juntado con la <a href="https://www.asociacionitaca.org/" target="_blank">Asociación Ítaca</a> para organizar una campaña de recogida de Juguetes. Esta Navidad, todos los hogares de Almerían recibirán un regalo, ¿Quieres ayudar?</p>
+                        </div>
+                        <div class="pt-container-left-content_3">
+                            <a href="/proyectos/sonrisas-navideñas/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg><span>Ver más</span></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pt-container-right">
+
+                    <div class="pt-container-right_card pt-container-right-up">
+                        <div class="pt-container-right_card-overlay"></div>
+                        <div class="pt-container-right_card-left">
+                        </div>
+                        <div class="pt-container-right_card-right">
+                            <h3>Puntos de Recogida</h3>
+                            <a class="disabled" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152l0 270.8c0 9.8-6 18.6-15.1 22.3L416 503l0-302.6zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6l0 251.4L32.9 502.7C17.1 509 0 497.4 0 480.4L0 209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77l0 249.3L192 449.4 192 255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
+                                <span>Mapa no disponible</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-container-right_card pt-container-right-down">
+                        <div class="pt-container-right_card-left"></div>
+                        <div class="pt-container-right_card-overlay"></div>
+                        <div class="pt-container-right_card-right">
+                            <h3>¡Hazte Voluntario!</h3>
+                            <a class="disabled" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M7.8 207.7c-13.1-17.8-9.3-42.8 8.5-55.9L142.9 58.5C166.2 41.3 194.5 32 223.5 32L384 32l160 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-36.8 0-44.9 36c-22.7 18.2-50.9 28-80 28L304 224l-16 0-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0 16 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-120.6 0L63.7 216.2c-17.8 13.1-42.8 9.3-55.9-8.5zM382.4 160c0 0 0 0 0 0l.9 0c-.3 0-.6 0-.9 0zM568.2 304.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 453.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 480 32 480c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 352c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"/></svg>
+                                <span>Próximamente</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="news-section" id="news-section">
+
+            <div class="projects-highlight-title-container">
+
+                <h2 class="default-title">Actualidad</h2>
+                <a href="/actualidad/">
+                    <span>Leer más</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg> 
+                </a>
                 
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <img src="./include/assets/logos/clan_nyeri-logo-icon.svg" alt="Isotipo del Clan Nyeri" class="_home-clannyeri_logo">
-                </div>
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><p><i>El Clan Nyeri es una familia scout perteneciente a la agrupación Cabo de Venus. Desde que nos fundamos en septiembre de 2023, en la soleada Almería, nos lanzamos de lleno a vivir la etapa ruta con todo el espíritu. ¡Somos esos scouts que siempre buscamos llevar nuestros proyectos al siguiente nivel! ¡Y todo mientras disfrutamos del servicio hacia los demás!</i></p></div>
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <p>Hemos trabajado con:</p>
-                </div>
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="home-logos-work">
-                        <img src="./include/assets/logos/logo-diputa.png" alt="Logo de la Diputación de Almería">
-                        <img src="./include/assets/logos/logo-ayto.png" alt="Logo del Ayuntamiento de Almería">
-                        <img src="./include/assets/logos/logo-fesbal.png" alt="Logo de la Federación de Banco de Alimentos de España, FESBAL" class="home-logos-work-fesbal">
-                        <img src="./include/assets/logos/logo-nf.png" alt="Logo de la Asociación sin Ánimo de Lucro 'Nuevo Futuro'">
-                    </div>
-                </div>
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><p>Hemos aparecido en:</p></div>
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="home-logos-work">
-                        <img src="./include/assets/logos/logo-lvda.png" alt="Logo del Periódico La Voz de Almería">
-                        <img src="./include/assets/logos/logo-esradio.png" alt="Logo de la radio: EsRadio">
-                        <img src="./include/assets/logos/logo-interalm.png" alt="Logo del Canal de Televisión InterAlmería">
-                        <img src="./include/assets/logos/logo-radiomarca.png" alt="Logo de la radio: RadioMarca">
-                    </div>
-                </div>
-
             </div>
+
+            <div class="news-container"></div>
+
+            <div class="projects-arrows">
+                <button class="news-arrow-prev projects-arrows-button projects-arrows-left"><span hidden>Previous Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></button>
+                <button class="news-arrow-next projects-arrows-button projects-arrows-right"><span hidden>Next Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+            </div>
+
         </section>
 
-        <div class="add-animate" data-animate="fadeInDown" data-duration="1s" data-delay="0s" data-offset="100" data-iteration="1">
-            <div class="banner">
+        <div class="calendars-sections">
 
-                <div class="banner-slider">
-                    <div class="bs-track">
+            <section id="calendar-section" class="calendar-section">
 
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-mundial.png" alt="Logo mundial de los Scouts"></div>
-                        <div class="bst-slide"><img id="bsts-msc-logo" src="./include/assets/logos/logo-msc.png" alt="Logo de Scouts MSC España"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-sca.png" alt="Logo de la Federación de Scouts Católicos de Andalucía"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-ade.png" alt="Logo de la Asociación de Scouts Católicos de Almería"></div>
-                        <div class="bst-slide"><img src="./include/assets/logos/logo-agrupa.png" alt="Logo de la Agrupación Ruta Cabo de Venus"></div>
-                        
-                    </div>    
+                <div class="projects-highlight-title-container">
+    
+                    <h2 class="default-title">Eventos</h2>
+                    <a href="https://www.clannyeri.com/calendario/">
+                        <span>Calendario 24/25</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg> 
+                    </a>
+                    
                 </div>
+    
+                <div class="calendar-container"></div>
+    
+                <div class="projects-arrows">
+                    <button class="calendar-arrow-prev projects-arrows-button projects-arrows-left"><span hidden>Previous Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></button>
+                    <button class="calendar-arrow-next projects-arrows-button projects-arrows-right"><span hidden>Next Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+                </div>
+    
+            </section>
 
-            </div>
+            <section id="calendar-section" class="old_calendar-section">
+
+                <h2 class="default-title">Últimos Eventos</h2>
+    
+                <div class="old_calendar-container"></div>
+    
+                <div class="projects-arrows">
+                    <button class="old_calendar-arrow-prev projects-arrows-button projects-arrows-left"><span hidden>Previous Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></button>
+                    <button class="old_calendar-arrow-next projects-arrows-button projects-arrows-right"><span hidden>Next Card Button</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+                </div>
+    
+            </section>
+
         </div>
 
-        <section id="about">
-            <div class="section-width about-content">
+        <section class="contact-section" id="contact-section">
 
-                <div class="about-card">
+            <h2 class="default-title">Contacto</h2>
 
-                    <img src="./include/assets/items/insignia-ruta.svg" alt="Insignia Rutas MSC España en color rojo" class="about-card-float_img">
-                    
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><h1 class="default-h1-title">Sobre Nosotros</h1></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><p>El Clan Nyeri, es un clan ruta perteneciente a la agrupación Cabo de Venus fundado en septiembre de 2023, y constituido poco tiempo después, el 4 de noviembre de dicho año en las Rozas, Abrucena. El clan, está formado por miembros scouts con una larga trayectoria en el movimiento, que con su experiencia y sus ganas de servir, están realizando grandes proyectos sobrepasando los límites de la rama y haciendo historia por toda la asociación de scouts católicos almerienses, incluso, haciéndose un gran hueco en libro de oro andaluz.</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><p>En su corta trayectoria como clan, este ha realizado todo tipo de actividades relacionadas a la rama ruta, y a su lema: ¡Servir!. Los grandes proyectos y las acciones de servicio realizadas hasta el momento, son solo un pequeño inicio de los grandes planes que tiene el clan a un futuro cercano.</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1"><p>¿Quieres saber cómo continúa la historia?</p></div>
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                        <div class="about-card-right-buttons">
-                            <a href="/proyectos/asociacion/" class="a-link-default a-link-primary" aria-label="Proyectos" rel="noopener noreferrer" title="Descrubre los proyectos del Clan Nyeri">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z"/></svg>
-                                <span>La Asociación</span>
-                            </a>
-                            <a href="/nosotros" class="a-link-default a-link-secondary" aria-label="Saber más" rel="noopener noreferrer" title="Conoce un poco más sobre el Clan Nyeri">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                                <span>Saber más</span>
-                            </a>
-                        </div>
+            <form class="contact_form">
+                <div class="contact-column contact-column_1">
+
+                    <div class="contact-column_1-row contact-column_1-row_1">
+                        <input type="text" autocomplete="cc-family-name" placeholder="Apellidos*" required>
+                        <input type="email" autocomplete="email" placeholder="Email*" required>
+                        <input type="text" autocomplete="organization" placeholder="Organización">
                     </div>
-                    
+                    <div class="contact-column_1-row contact-column_1-row_2">
+                        <input type="text" autocomplete="cc-given-name" placeholder="Nombre*" required>
+                        <input type="tel" autocomplete="mobile" placeholder="Teléfono">
+                        <input type="text" placeholder="Estoy buscando*" required>
+                    </div>
+
                 </div>
 
+                <div class="contact-column contact-column_2">
+                    <textarea rows="1" required placeholder="Mensaje*"></textarea>
+                    <button type="submit"><span>Envíar</span></button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="photogallery-section" id="photogallery-section">
+
+            <div class="projects-highlight-title-container">
+    
+                <h2 class="default-title">Fotogalería</h2>
+                <a href="https://www.clannyeri.com/fotogaleria/">
+                    <span>Ver completa</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg> 
+                </a>
+                
             </div>
-        </section>
 
-        <section id="shop">
-            <div class="section-width shop-content">
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="shop-container">
-
-                        <div class="shop-card">
-
-                            <div class="shop-card-child_0"><img src="./include/assets/test/t-shirt.png" alt="Camiseta Básica Blanca con el Logotipo del Clan Nyeri"></div>
-
-                            <div class="shop-card-child_2">
-                                <h2>La Tienda Nyeri</h2>
-                                <p>En los <b>próximos meses</b>, se lanzará el primer drop oficial de la Tienda del Clan Nyeri. Esta <b>colección exclusiva incluirá diseños únicos que representan la esencia del clan</b>, combinando tradición y estilo. ¡<b>Mantente atento para ser de los primeros</b> en adquirir estas piezas especiales!</p>
-                                <div class="shop-card-child_2-labels">
-                                    <a>Proximamente...</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="section-width projects-content">
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <h1 class="default-h1-title">Proyectos</h1>
-                </div>
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="projects-filters">
-
-                        <div class="pf-years">
-
-                            <select id="pf-years-select">
-                                <option class="pf-years-option" value="all" selected>2023 - 2025</option>
-                                <option class="pf-years-option" value="2025">2025</option>
-                                <option class="pf-years-option" value="2024">2024</option>
-                                <option class="pf-years-option" value="2023">2023</option>
-                            </select>
-
-                        </div>
-
-                        <div class="pf-type">
-                            <input type="radio" name="pf-type-input" id="pf-type-all" checked>
-                            <label for="pf-type-all">Todos</label>
-                        </div>
-
-                        <div class="pf-type">
-                            <input type="radio" name="pf-type-input" id="pf-type-destacado">
-                            <label for="pf-type-destacado">Destacados</label>
-                        </div>
-
-                        <div class="pf-type">
-                            <input type="radio" name="pf-type-input" id="pf-type-extrajob">
-                            <label for="pf-type-extrajob">Extrajobs</label>
-                        </div>
-
-                        <div class="pf-type pf-type-evento-container">
-                            <input type="radio" name="pf-type-input" id="pf-type-evento">
-                            <label for="pf-type-evento">Eventos</label>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div class="projects-container">
-
-                        <div class="project-card" data-year="2025" data-type="evento" data-destacado="true">
-                            <span>DPS25 Proyect - 22 de Febrero 2025</span>
-                            <h2>Día del Pensamiento Scout 2025</h2>
-                            <p>Después del fantástico evento realizado el pasado 24 de febrero de 2024, <b>el Clan Nyeri ha decido volver ha organizar el Día del Pensamiento Scout. ¡Pronto tendremos más información!</b>.</p>
-                            <div class="project-card-links">
-                                <a href="/proyectos/dps25" class="a-link-default" aria-label="Tejiendo Historia" rel="noopener noreferrer" title="Descubre el proyecto Tejiendo Historia">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
-                                    <span>El Proyecto</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-year="2024" data-type="evento" data-destacado="true">
-                            <span>Una iniciativa de la Asociación Juvenil Nyeri</span>
-                            <h2>Proyecto: Sonrisas Navideñas</h2>
-                            <p>Nyeri se enorgullece de presentar <b>su primera campaña solidaria</b>: una <b>recogida de juguetes</b> para que todos los niños y jóvenes de Almería puedan disfrutar de la magia de la Navidad.</p>
-                            <!-- <div class="project-card-links">
-                                <a href="https://almeriaciudad.es/actualidad/mas-de-50-asociaciones-de-la-ciudad-participaran-este-domingo-en-retamar-el-toyo-en-una" class="a-link-default" aria-label="Leer más" rel="noopener noreferrer" title="Más de 50 asociaciones de la ciudad participarán este domingo, en Retamar-El Toyo, en una nueva edición del Encuentro Vecinal" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
-                                    <span>Leer más</span>
-                                </a>
-                            </div> -->
-                        </div>
-
-                        <div class="project-card" data-year="2024" data-type="Servicio" data-destacado="false">
-                            <span>29 de Septiembre 2024</span>
-                            <h2>Voluntariado: Encuentro Vecinal Almería</h2>
-                            <p>El pasado domingo 29 de septiembre, el Clan Nyeri participó en el <b>Encuentro Vecinal del Toyo 2024</b> donde realizamos juegos para los niños de la ciudad.</p>
-                            <div class="project-card-links">
-                                <a href="https://almeriaciudad.es/actualidad/mas-de-50-asociaciones-de-la-ciudad-participaran-este-domingo-en-retamar-el-toyo-en-una" class="a-link-default" aria-label="Leer más" rel="noopener noreferrer" title="Más de 50 asociaciones de la ciudad participarán este domingo, en Retamar-El Toyo, en una nueva edición del Encuentro Vecinal" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
-                                    <span>Leer más</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-year="2025" data-type="" data-destacado="false">
-                            <span>Asociación Juvenil Sin Ánimo de Lucro Nyeri</span>
-                            <h2>La Asociación Nyeri</h2>
-                            <p>¡El Clan Nyeri esta fundando una asociación juvenil! ¿Quieres conocer porqué?</p>
-                            <div class="project-card-links">
-                                <a href="/proyectos/asociacion/" class="a-link-default" aria-label="Tejiendo Historia" rel="noopener noreferrer" title="Descubre el proyecto Tejiendo Historia">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
-                                    <span>Saber más</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-year="2024" data-type="extrajob" data-destacado="false">
-                            <span>Extrajob - Clan Nyeri X G.S. Al-Hawd</span>
-                            <h2>Sorteo de Verano 2024</h2>
-                            <p>Está gran <b>ronda solar está llegando a su fín</b>, pero desde el Clan Nyeri ¡Nunca paramos! <b>Junto con el Grupo Scout Al-Hawd, hemos organizado un sorteo</b> de dos entradas para el Gran SPA del Hotel Barceló. Con un <b>donativo de tan solo 1€</b>, ¿estás seguro que te lo quieres perder? ¡Contactanos para comprar la número!</p>
-                            <div class="project-card-links">
-                                <a class="a-link-default" aria-label="Tejiendo Historia" rel="noopener noreferrer" title="Descubre el proyecto Tejiendo Historia">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M400 0L176 0c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8L24 64C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9L192 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-26.1 0C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24L446.4 64c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112l84.4 0c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6l84.4 0c-5.1 66.3-31.1 111.2-63 142.3z"/></svg>
-                                    <span>Nº Ganador: 790</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-year="2024" data-type="extrajob" data-destacado="true">
-                            <span>Extrajob - San Jorge Asociativo 2024</span>
-                            <h2>Tejiendo Historia</h2>
-                            <p>En el marco del <b>XXV Aniversario de la ADE almeriense</b>, desde el Clan Ruta Nyeri <b>presentamos el "Proyecto TH25: Tejiendo Historia"</b>. Una iniciativa que <b>busca conmemorar un cuarto de siglo de compromiso, trabajo y pasión por el escultismo</b> en nuestra ciudad, Almería. En la celebración de este evento tan significativo, es esencial que cada detalle refleje la rica historia, el compromiso y la pasión que han caracterizado a nuestra asociación a lo largo de estos años.</p>
-                            <div class="project-card-links">
-                                <a href="/proyectos/tejiendo-historia" class="a-link-default" aria-label="Tejiendo Historia" rel="noopener noreferrer" title="Descubre el proyecto Tejiendo Historia">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
-                                    <span>El Extrajob</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-year="2024" data-type="evento" data-destacado="true">
-                            <span>DPS24 Proyect - 24 de Febrero 2024</span>
-                            <h2>Día del Pensamiento Scout 2024</h2>
-                            <p>Este año 2024, desde el Clan Ruta Nyeri <b>ha surgido la iniciativa de celebrar</b> este extraordinario día en la provincia de Almería, <b>marcando un hito al ser la primera vez que se lleve a cabo en nuestra querida ciudad</b>. Junto con el eslogan “Música, Familia y Deporte”, <b>el clan ruta Nyeri y la asociación Nuevo Futuro</b>, realizarán un <b> encuentro presencia donde se unirán todos los Grupos Scouts</b> que se alojan en nuestra provincia, para celebrar en familia, y con la familia, este día tan importante para nosotros.</p>
-                            <div class="project-card-links">
-                                <a href="/proyectos/dps24" class="a-link-default" aria-label="Tejiendo Historia" rel="noopener noreferrer" title="Descubre el proyecto Tejiendo Historia">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
-                                    <span>¿Qué Pasó?</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-year="2023" data-type="Servicio" data-destacado="false">
-                            <span>Acción de Servicio</span>
-                            <h2>Voluntariado en Fesbal</h2>
-                            <p>Una de las palabras por la que se define <b>la rama ruta es servir</b>. Algunos de los objetivos que el clan Nyeri quiere realizar a lo largo de la etapa es la realización de voluntariado. La primera acción de servicio que realizó el clan, <b>fué la colaboración en las jornadas de invierno de recogida de alimentos organizada por la Federación Española de Bancos de Almientos</b> (FESBAL).</p>
-                            <div class="project-card-links">
-                                <a href="https://www.fesbal.org.es/" target="_blank" class="a-link-default" aria-label="Tejiendo Historia" rel="noopener noreferrer" title="Descubre el proyecto Tejiendo Historia">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
-                                    <span>Conoce Fesbal</span>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <div id="projects-pagination"></div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="blog">
-            <div class="section-width">
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <h1 class="default-h1-title">Noticias</h1>
-                </div>
-
-                <div class="blog-container">
-
-                    <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                        <a class="blog-card" href="https://clannyeri.medium.com/la-ii-celebración-del-día-del-pensamiento-scout-almeriense-fortaleciendo-el-espíritu-scout-e5106e353e11" target="_blank">
-                            <div class="blog-card-image">
-                                <img src="./include/assets/photogallery/2024/dps/15.jpg" alt="Archivo: Día del Pensamiento Scout 2024">
-                            </div>
-                            <div class="blog-card-info">
-                                <h1>La II Celebración del Día del Pensamiento Scout Almeriense: Fortaleciendo el Espíritu Scout</h1>
-                                <h2>La Celebración del Día del Pensamiento Scout Almeriense 2025 unirá a scouts en una jornada solidaria y de convivencia por un mundo mejor.</h2>
-                                <div class="blog-card-topics">
-                                    <span>Scouts Founders Day</span>
-                                    <span>Dps25</span>
-                                    <span>Scouts</span>
-                                    <span>Día Del Pensamiento Scout</span>
-                                    <span>Clan Nyeri</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-        </section>
-
-        <section id="photogallery">
-            <div class="section-width">
-
-                <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                    <h1 class="default-h1-title" style="text-align: center;">Fotogalería</h1>
-                </div>
-
-                <div class="photogallery-container">
-
-                    <div class="pc-container">
-
-                        <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                            <div class="pc-card">
-                                <div class="pc-img-container"><img class="pc-img" src="./include/assets/photogallery/2024/almocita-13.jpg"/></div>
-                            </div>
-                        </div>
-                        
-                        <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                            <div class="pc-card">
-                                <div class="pc-img-container"><img class="pc-img" src="./include/assets/photogallery/2023/xxv-ade-1.jpg"/></div>
-                            </div>
-                        </div>
-                        
-                        <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                            <div class="pc-card">
-                                <div class="pc-img-container"><img class="pc-img" src="./include/assets/photogallery/2023/campa-irs-05.jpg"/></div>
-                            </div>
-                        </div>
+            <div class="photogallery-container">
+                
+                <div class="photogallery-box"><img src="/include/assets/images/index/img-01.webp" alt="Nyeri Photo Archive"></div>
+                <div class="photogallery-box"><img src="/include/assets/images/index/img-03.webp" alt="Nyeri Photo Archive"></div>
+                <div class="photogallery-box"><img src="/include/assets/images/index/img-04.webp" alt="Nyeri Photo Archive"></div>
+                <div class="photogallery-box"><img src="/include/assets/images/index/img-02.webp" alt="Nyeri Photo Archive"></div>
         
-                        <div class="add-animate" data-animate="fadeInUp" data-duration=".5s" data-delay="0.2s" data-offset="100" data-iteration="1">
-                            <div class="pc-card">
-                                <div class="pc-img-container"><img class="pc-img" src="./include/assets/photogallery/2024/hermanamiento-almutasim-01.jpg"/></div>
-                            </div>
-                        </div>
-        
-                    </div>
-                    
-                </div>
-
-                <div style="display: flex;justify-content: center;">
-                    <a href="/fotogaleria/" class="a-link-default a-link-primary">Fotogaleria</a>
-                </div>                
-
             </div>
-        </section>
 
-        <footer>
-            <nav id="fn-left">
-                <img src="./include/assets/logos/clan_nyeri-logo-icon.svg" alt="Clan Ruta Nyeri (MSC Scouts) - Logo">
-            </nav>
-            <nav id="fn-right">
-    
-                <div class="fnr-up">
-                    <a href="https://www.instagram.com/clan.nyeri/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                    <a href="mailto:nyeri.clan@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>nyeri.clan@gmail.com</a>
-                </div>
-    
-                <p id="fnr-p">C. Rafael Calatrava no7 Bajo, 04006 Almería</p>
-    
-                <div class="fnr-down">
-                    <a aria-label="Inicio" rel="noopener noreferrer" title="Dirigite a la página de Inicio" hreflang="es" href="/">Inicio</a>
-                    <a aria-label="Clan" rel="noopener noreferrer" title="Dirigite a la página de Sobre nosotros" hreflang="es" href="/nosotros/">El Clan</a>
-                    <a aria-label="Proyectos" rel="noopener noreferrer" title="Dirigite a la página de Proyectos" hreflang="es" href="/proyectos/">Proyectos</a>
-                    <a aria-label="Fotogalería" rel="noopener noreferrer" title="Dirigite a la página de Fotogalería" hreflang="es" href="/fotogaleria/">Fotogalería</a>
-                </div>
-            </nav>
-        </footer>
+        </section>
 
     </main>
 
-    <script src="./include/lib/jquery-3.7.1.min.js"></script>
-    <script src="./include/lib/jquery.scrolla.min.js"></script>
+    <footer>
+        <div class="footer-row1">
+            <div class="footer-logo">
+                <img src="/include/assets/logos/clan_nyeri-logo-icon.svg" alt="">
+            </div>
+            <nav>
+                <a href="https://www.clannyeri.com/">Inicio</a>
+                <a href="https://www.clannyeri.com/nosotros/">El Clan</a>
+                <a href="https://www.clannyeri.com/asociacion">La Asociación</a>
+                <a href="https://www.clannyeri.com/fotogaleria/">Fotogalería</a>
+                <a href="https://www.clannyeri.com/calendario/">Calendario 24/25</a>
+            </nav>
+            <nav>
+                <a href="https://www.clannyeri.com/actualidad/">Actualidad</a>
+                <a href="https://clannyeri.medium.com/">Blog</a>
+                <a href="https://www.clannyeri.com/proyectos/">Proyectos</a>
+                <a href="https://www.clannyeri.com/proyectos/dps25/">Día del Pensamiento Scout 2025</a>
+                <a href="https://www.clannyeri.com/proyectos/sonrisas-navideñas/">Sonrisas Navideñas</a>
+            </nav>
+            <nav>
+                <a href="https://www.clannyeri.com/politica-de-cookies/">Política de Cookies</a>
+                <a href="https://www.clannyeri.com/politica-de-cookies/">Aviso Legal</a>
+            </nav>
+        </div>
+        <div>
+            <p style="margin-bottom: .5em;"><a href="mailto:nyericlan@gmail.com">nyericlan@gmail.com</a></p>
+            <p>Copyright © 2024 <a href="/">Asociación Juvenil Nyeri</a> - All rights reserved</p>
+            <p style="margin-top: .5em;">Developed by <a href="https://cpadlab.github.io/" target="_blank">Carlos Padilla</a></p>
+        </div>
+    </footer>
 
-    <script src="./include/script/modules/header.js"></script>
+    <script src="/include/lib/jquery-3.7.1.min.js"></script>
+    
+    <script src="/include/lib/jquery-migrate.min.js"></script>
+    <script src="/include/lib/slick/slick/slick.min.js"></script>
 
-    <script src="./include/script/pages/index/projects.js"></script>
-    <script src="./include/script/modules/photogallery-card.js"></script>
-
-    <style>
-        .add-animate {
-            opacity: 0;
-        }
-    </style>
-
-    <script>
-        
-        $('.add-animate').scrolla({
-            mobile: true,
-            once: true,
-        })
-
-    </script>  
+    <script type="text/javascript" src="/include/scripts/pages/index.js"></script>
+    <script type="text/javascript" src="/include/scripts/header.js"></script>
 
 </body>
 </html>

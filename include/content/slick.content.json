@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Proyecto: Sonrisas Navideñas",
+        "subtitle": "Una iniciativa de la Asoc. Juvenil Nyeri. Donde colaborará con la Asoc. Ítaca y Asisa para que todos los hogares de Almería reciban un regalo por Navidad.",
+        "label_text": "Proyectos",
+        "label_icon": "fire",
+        "button_text": "Hazte Voluntario",
+        "button_icon": "help",
+        "button_href": "https://www.clannyeri.com/proyectos/sonrisas-navideñas/",
+        "button_target": "",
+        "background_image": "/include/assets/temp/sornisas.jpg",
+        "background_alt": "Cartel del Proyecto Sonrsas Navideñas"
+    },{
+        "title": "Encuentro Vecinal El Toyo",
+        "subtitle": "El pasado domingo 29 de septiembre, el Clan Nyeri participó en el Encuentro Vecinal del Toyo 2024 donde realizamos juegos para los niños de la ciudad.",
+        "label_text": "Noticias",
+        "label_icon": "news",
+        "button_text": "El Encuentro",
+        "button_icon": "website",
+        "button_href": "https://almeriaciudad.es/actualidad/mas-de-50-asociaciones-de-la-ciudad-participaran-este-domingo-en-retamar-el-toyo-en-una",
+        "button_target": "_blank",
+        "background_image": "/include/assets/temp/0e31066e-e18c-4766-91f9-a81cfdb9a641.jpeg",
+        "background_alt": "Foto del encuentro vecinal almeriense 2024 del Toyo"
+    },{
+        "title": "Día del Pensamiento Scout 2025",
+        "subtitle": "II Edición del Proyecto DPS, próximamente más información. ¡Únete el próximo 22 de febrero a todos los Scouts de Almería para celebrar en familia el día del fundador!",
+        "label_text": "Proyectos",
+        "label_icon": "fire",
+        "button_text": "Más información",
+        "button_icon": "website",
+        "button_href": "https://www.clannyeri.com/proyectos/dps25/",
+        "button_target": "",
+        "background_image": "/include/assets/banners/img-07.webp",
+        "background_alt": "Foto del día del Pensamiento Scout 2024"
+    }
+]

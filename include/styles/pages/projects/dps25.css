@@ -1,0 +1,32 @@
+.projects-container-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.projects-container-links a {
+    color: var(--zinc-100);
+    text-decoration: none;
+    position: relative;
+}
+
+.projects-container-links a.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.projects-container-links a::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background: var(--zinc-100);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projects-container-links {
+    padding-bottom: 3em;
+}

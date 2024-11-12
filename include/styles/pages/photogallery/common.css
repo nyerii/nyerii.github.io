@@ -1,0 +1,30 @@
+
+.photogallery {
+    padding: 2em;
+}
+
+.photogallery-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+
+.photogallery-card img {
+    width: 100%;
+    border-radius: 1em;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .photogallery-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.contact-section_page {
+    padding-top: 1em !important;
+}

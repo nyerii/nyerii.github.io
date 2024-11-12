@@ -1,0 +1,38 @@
+[
+    {
+        "titlo": "Salida: Caminito del Rey",
+        "fecha": [
+            "2025-04-27"
+        ],
+        "foto": "/include/assets/calendar/img-01.webp"
+    },
+    {
+        "titlo": "Capamento de Clan",
+        "fecha": [
+            "2025-03-14"
+        ],
+        "foto": "/include/assets/calendar/img-02.webp"
+    },
+    {
+        "titlo": "Día del Pensamiento Scout",
+        "fecha": [
+            "2025-02-22"
+        ],
+        "foto": "/include/assets/calendar/img-03.webp"
+    },
+    {
+        "titlo": "Hermanamiento",
+        "fecha": [
+            "2025-02-08"
+        ],
+        "foto": "/include/assets/calendar/img-04.webp"
+    },
+    {
+        "titlo": "Campamento de Navidad",
+        "fecha": [
+            "2024-12-27"
+        ],
+        "foto": "/include/assets/calendar/img-05.webp"
+    }
+    
+]
