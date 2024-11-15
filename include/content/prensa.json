@@ -3,6 +3,31 @@
 [
     {
         "date": "2024-09-23",
+        "title_43": "El Clan Nyeri, la Asociación Ítaca y ASISA unen fuerzas para una Navidad llena de SONRISAS EN EL PUCHE",
+        "img": "/include/assets/temp/sornisas.jpg",
+        "alt_img": "José Luis Sánchez Rodríguez, equipo de Atención Personal Asisa; José J. Tara Arriola, Delegado Provincial de Asisa; Sonia Moreno Jordán, direc",
+        "cadena_h4": "Asociación Ítaca",
+        "logo_cadena": "/include/assets/logos/ade_almeria-logo.webp",
+        "logo_cadena_alt": "Logo de la Asociación Diocesana de Scouts de Almería",
+        "custom_logo_class": "logo_wb",
+        "link": "https://www.asociacionitaca.org/campa%C3%B1a--sonrisas-navide%C3%B1as",
+        "label": "Artículo",
+        "label_icon": "blog"
+    },
+    {
+        "date": "2024-11-13",
+        "title_43": "Arranca una gran recogida de juguetes para niños y niñas usuarios de Ítaca",
+        "img": "/include/assets/temp/sornisas.jpg",
+        "alt_img": "José Luis Sánchez Rodríguez, equipo de Atención Personal Asisa; José J. Tara Arriola, Delegado Provincial de Asisa; Sonia Moreno Jordán, direc",
+        "cadena_h4": "La Voz de Almería",
+        "logo_cadena": "/include/assets/logos/lvda-logo_light.webp",
+        "logo_cadena_alt": "Logo del Periódico La Voz de Alméria (LVDA)",
+        "custom_logo_class": "",
+        "link": "https://www.lavozdealmeria.com/noticia/12/almeria/283199/arranca-una-gran-recogida-de-juguetes-para-ninos-y-ninas-usuarios-de-itaca",
+        "label": "Periódico",
+        "label_icon": "nw"
+    },{
+        "date": "2024-09-23",
         "title_43": "Más de 50 asociaciones participarán en el Encuentro Vecinal",
         "img": "/include/assets/news/img-05.webp",
         "alt_img": "Foto del Concejal Óscar Bleda en la presentación del Encuentro Vecinal 2024",
