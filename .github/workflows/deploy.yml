@@ -3,22 +3,20 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main # Se ejecuta al hacer push a la rama main
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Clona el código fuente
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # 2. Configura Node.js
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18 # Versión de Node.js (debe ser compatible con tu proyecto)
+        node-version: 22.11
 
     # 3. Instala las dependencias
     - name: Install dependencies
@@ -30,13 +28,11 @@ jobs:
       env:
         REACT_APP_BREVO_CONVERSATIONS_API_KEY: ${{ secrets.REACT_APP_BREVO_CONVERSATIONS_API_KEY }}
 
-    # 5. Compila la aplicación React
     - name: Build React app
       run: npm run build
 
-    # 6. Despliega la aplicación en GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Usa el PAT si tu repositorio es privado
-        publish_dir: ./build # Carpeta de salida generada por el comando npm run build
+        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        publish_dir: ./build
