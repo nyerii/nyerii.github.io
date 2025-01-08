@@ -1,41 +1,16 @@
 {
-    "urls": [
-      {
-        "loc": "https://www.clannyeri.com/index.html",
-        "lastmod": "2024-08-26",
-        "changefreq": "yearly",
-        "priority": 1.0
-      },
-      {
-        "loc": "https://www.clannyeri.com/nosotros",
-        "lastmod": "2024-08-26",
-        "changefreq": "yearly",
-        "priority": 0.9
-      },
-      {
-        "loc": "https://www.clannyeri.com/fotogaleria",
-        "lastmod": "2024-08-26",
-        "changefreq": "always",
-        "priority": 0.8
-      },
-      {
-        "loc": "https://www.clannyeri.com/proyectos",
-        "lastmod": "2024-08-26",
-        "changefreq": "monthly",
-        "priority": 0.8
-      },
-      {
-        "loc": "https://www.clannyeri.com/tienda",
-        "lastmod": "2024-08-26",
-        "changefreq": "monthly",
-        "priority": 0.7
-      },
-      {
-        "loc": "https://www.clannyeri.com/include",
-        "lastmod": "2024-08-26",
-        "changefreq": "yearly",
-        "priority": 0.4
-      }
-    ]
+  "routes": [
+    { "path": "/" },
+    { "path": "/actualidad" },
+    { "path": "/proyectos" },
+    { "path": "/proyectos/sonrisas-navideñas" },
+    { "path": "/proyectos/tejiendo-historia" },
+    { "path": "/proyectos/dps24/" },
+    { "path": "/proyectos/dia-del-pensamiento-scout-2024/" },
+    { "path": "/proyectos/dps25/" },
+    { "path": "/conocenos/" },
+    { "path": "/fotogaleria" },
+    { "path": "/aviso-legal/" },
+    { "path": "/politica-de-privacidad/" }
+  ]
 }
-  
