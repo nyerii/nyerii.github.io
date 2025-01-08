@@ -2,6 +2,7 @@
   "name": "nyeri",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://nyerii.github.io/nyerii.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
