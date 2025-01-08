@@ -1,16 +1,4 @@
 User-agent: *
-Disallow: /.vscode
-Disallow: /.gitattributes
-Disallow: /include
-Disallow: /include/*
-Allow: /proyectos/template
+Disallow:
 
-Allow: /fotogaleria
-Allow: /nosotros
-Allow: /proyectos
-Allow: /proyectos/dps24
-Allow: /proyectos/dps25
-Allow: /proyectos/tejiendo-historia
-Allow: /tienda
-
-Sitemap: https://www.clannyeri.com/sitemap.xml
+Sitemap: https://www.tusitio.com/sitemap.xml
