@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /aviso-legal/
+Disallow: /politica-de-privacidad/
 
-Sitemap: https://www.tusitio.com/sitemap.xml
+Sitemap: https://clannyeri.com/sitemap.xml

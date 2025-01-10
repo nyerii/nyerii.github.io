@@ -1,16 +1,69 @@
 {
-  "routes": [
-    { "path": "/" },
-    { "path": "/actualidad" },
-    { "path": "/proyectos" },
-    { "path": "/proyectos/sonrisas-navideñas" },
-    { "path": "/proyectos/tejiendo-historia" },
-    { "path": "/proyectos/dps24/" },
-    { "path": "/proyectos/dia-del-pensamiento-scout-2024/" },
-    { "path": "/proyectos/dps25/" },
-    { "path": "/conocenos/" },
-    { "path": "/fotogaleria" },
-    { "path": "/aviso-legal/" },
-    { "path": "/politica-de-privacidad/" }
+  "sitemap": [
+    {
+      "loc": "https://clannyeri.com/",
+      "priority": "1.00",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/proyectos",
+      "priority": "0.80",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/conocenos",
+      "priority": "0.80",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/actualidad",
+      "priority": "0.80",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/proyectos/sonrisas-navidenas",
+      "priority": "0.64",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/proyectos/tejiendo-historia",
+      "priority": "0.64",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/proyectos/dps24",
+      "priority": "0.64",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/proyectos/dps25",
+      "priority": "0.64",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/fotogaleria",
+      "priority": "0.50",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/contacto",
+      "priority": "0.50",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/aviso-legal",
+      "priority": "0.30",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/politica-de-privacidad",
+      "priority": "0.30",
+      "lastmod": "2025-01-10"
+    },
+    {
+      "loc": "https://clannyeri.com/certificados",
+      "priority": "0.30",
+      "lastmod": "2025-01-10"
+    }
   ]
 }

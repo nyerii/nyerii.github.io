@@ -1,63 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
   <url>
-    <loc>https://www.clannyeri.com/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>https://clannyeri.com/</loc>
+    <priority>1.00</priority>
+    <lastmod>2025-01-10</lastmod>
+  </url>
+
+  <!-- Proyectos -->
+  <url>
+    <loc>https://clannyeri.com/proyectos</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-01-10</lastmod>
+  </url>
+
+  <!-- Conócenos -->
+  <url>
+    <loc>https://clannyeri.com/conocenos</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-01-10</lastmod>
+  </url>
+
+  <!-- Actualidad -->
+  <url>
+    <loc>https://clannyeri.com/actualidad</loc>
+    <priority>0.80</priority>
+    <lastmod>2025-01-10</lastmod>
+  </url>
+
+  <!-- Páginas de proyectos -->
+  <url>
+    <loc>https://clannyeri.com/proyectos/sonrisas-navidenas</loc>
+    <priority>0.64</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
   <url>
-    <loc>https://www.clannyeri.com/actualidad</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://clannyeri.com/proyectos/tejiendo-historia</loc>
+    <priority>0.64</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
   <url>
-    <loc>https://www.clannyeri.com/proyectos</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://clannyeri.com/proyectos/dps24</loc>
+    <priority>0.64</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
   <url>
-    <loc>https://www.clannyeri.com/proyectos/sonrisas-navideñas</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://clannyeri.com/proyectos/dps25</loc>
+    <priority>0.64</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
+
+  <!-- Fotogalería -->
   <url>
-    <loc>https://www.clannyeri.com/proyectos/tejiendo-historia</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://clannyeri.com/fotogaleria</loc>
+    <priority>0.50</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
+
+  <!-- Contacto -->
   <url>
-    <loc>https://www.clannyeri.com/proyectos/dps24/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://clannyeri.com/contacto</loc>
+    <priority>0.50</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
+
+  <!-- Aviso legal -->
   <url>
-    <loc>https://www.clannyeri.com/proyectos/dia-del-pensamiento-scout-2024/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://clannyeri.com/aviso-legal</loc>
+    <priority>0.30</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
+
+  <!-- Política de privacidad -->
   <url>
-    <loc>https://www.clannyeri.com/proyectos/dps25/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://clannyeri.com/politica-de-privacidad</loc>
+    <priority>0.30</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
+
+  <!-- Certificados -->
   <url>
-    <loc>https://www.clannyeri.com/conocenos/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.clannyeri.com/fotogaleria</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.clannyeri.com/aviso-legal/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.clannyeri.com/politica-de-privacidad/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://clannyeri.com/certificados</loc>
+    <priority>0.30</priority>
+    <lastmod>2025-01-10</lastmod>
   </url>
 </urlset>
