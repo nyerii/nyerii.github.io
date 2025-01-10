@@ -17,7 +17,7 @@ directories=(
 
 for dir in "${directories[@]}"; do
     mkdir -p "$dir"
-    cp index.html "$dir"
+    cp ../index.html "$dir"
 done
 
 echo "Directorios creados y archivos copiados correctamente."
