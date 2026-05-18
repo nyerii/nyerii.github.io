@@ -1,0 +1,29 @@
+[
+    {
+        "testimonial": "Nadie veía posible que estos chicos lograran lo que hicieron, pero todo su esfuerzo y dedicación hablaron por sí mismos.",
+        "image": "/assets/images/asset-54.webp",
+        "person": {
+            "name": "Don Alejandro García Terriza",
+            "job": "Director, Asociación Nuevo Futuro"
+        },
+        "organisation": "Asociación Nuevo Futuro"
+    },
+    {
+        "testimonial": "Gracias a sus grandes ambiciones hemos tenido grandes resultados, han sacado una sonrisa a todos nuestros niños.",
+        "image": "/assets/images/asset-51.webp",
+        "person": {
+            "name": "Doña Sonia Moreno Jordán",
+            "job": "Directoria, Asociación Ítaca"
+        },
+        "organisation": "Asociación Ítaca"
+    },
+    {
+        "testimonial": "Son el verdadero sentido de su lema 'Ruta'; siempre están ahí para servir.",
+        "image": "/assets/images/asset-34.webp",
+        "person": {
+            "name": "Don Oscar Bleda Parrado",
+            "job": "Concejal Delegado, Ayuntamiento de Almería"
+        },
+        "organisation": "Asociación Ítaca"
+    }
+]

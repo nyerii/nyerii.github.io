@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Voluntariado Cáritas",
+        "subtitle": "Jornadas de Voluntariado en el campo de trabajo realizado del Centro Penitenciario de Almería",
+        "type": "Voluntariado",
+        "image": "https://www.caritas.es/main-files/uploads/2025/07/centro-penitenciario-Almeria.jpg"
+    },
+    {
+        "title": "Día del Pensamiento Scout 2025",
+        "subtitle": "¡El encuentro scout más esperado del año! Un evento solidario a favor de Nuevo Futuro donde celebrar en familia el escultismo.",
+        "type": "Evento",
+        "link": "/proyectos/dia-del-pensamiento-scout-2025",
+        "image": "/assets/images/dps25/32.webp"
+    },
+    {
+        "title": "Sonrisas Navideñas",
+        "subtitle": "Nyeri se enorgullece de presentar su primera campaña solidaria: una recogida de juguetes para que todos los niños y jóvenes de Almería puedan disfrutar de la magia de la Navidad.",
+        "type": "Proyecto",
+        "link": "/proyectos/sonrisas-navidenas",
+        "image": "/assets/images/asset-09.webp"
+    },
+    {
+        "title": "Encuentro Vecinal Almería",
+        "subtitle": "El pasado domingo 29 de septiembre del 2024, el Nyeri participó en el Encuentro Vecinal del Toyo 2024 donde realizamos juegos para los niños de la ciudad.",
+        "type": "Voluntariado",
+        "image": "/assets/images/asset-21.webp"
+    },
+    {
+        "title": "Tejiendo Historia",
+        "subtitle": "En el marco del XXV Aniversario de la ADE almeriense, desde el Clan Ruta Nyeri presentamos el 'Proyecto TH25: Tejiendo Historia'. Una iniciativa que busca conmemorar un cuarto de siglo de compromiso, trabajo y pasión por el escultismo en nuestra ciudad, Almería.",
+        "type": "Extrajob",
+        "link": "/proyectos/tejiendo-historia",
+        "image": "/assets/images/asset-10.webp"
+    },
+    {
+        "title": "Día del Pensamiento Scout 2024",
+        "subtitle": "Este año 2024, desde el Clan Ruta Nyeri ha surgido la iniciativa de celebrar este extraordinario día en la provincia de Almería, marcando un hito al ser la primera vez que se lleve a cabo en nuestra querida ciudad.",
+        "type": "Evento",
+        "link": "/proyectos/dia-del-pensamiento-scout-2024",
+        "image": "/assets/images/asset-11.webp"
+    },
+    {
+        "title": "Voluntariado en Fesbal",
+        "subtitle": "Una de las palabras por la que se define la rama ruta es servir. Algunos de los objetivos que el clan Nyeri quiere realizar a lo largo de la etapa es la realización de voluntariado. La primera acción de servicio que realizó el clan, fué la colaboración en las jornadas de invierno de recogida de alimentos organizada por la Federación Española de Bancos de Almientos (FESBAL).",
+        "type": "Voluntariado",
+        "image": "/assets/images/asset-20.webp"
+    }
+]
+
